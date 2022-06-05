@@ -52,29 +52,18 @@ int sum(int a, int b){
 }
 ```
 
-### Part 3/3 Bash Commands
+### Part 3/3 Bash Commands - Configure and Generate
 
 
-Remove folders and files
-You must be one directory back, outside the folder
-```
-rmdir build /S /Q
-```
 
-Configure and generate project
 
 Be sure to be in the folder where the file is "main.cpp" 
 
-You must create "Build" folder before 
-
-You can use the default compiler by ".." or select a specific compiler (-G "generator type" ) 
-
-Links:
-* https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
-* https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html
 
 
-Create directory
+
+
+Create directory, before You start
 ```
 mkdir build
 ```
@@ -84,12 +73,13 @@ Option 1 - Configure
 cmake . 
 ```
 
-Option 2 - Configure and Generate
+Option 2 - Configure and Generate using default compiler
 ```
 cmake .. 
 ```
 
 Option 3 - Configure and Generate using Visual Studio compiler
+https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
 ```
 cmake -G "Visual Studio 16 2019" ..
 ```
@@ -102,6 +92,14 @@ cmake --build .
 Run the executable C:\Test\build\Debug
 ```
 my_exe.exe
+```
+
+Remove folders and files, be one directory back, outside the folder
+
+```
+
+rmdir build /S /Q
+
 ```
 
 
