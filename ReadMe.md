@@ -9,7 +9,7 @@ ___
 
 <a name="minimal_example"></a>
 
-## :one: minimal_example 
+### :one: minimal_example 
 ### Part 1/3 Create CMake File "CMakeLists.txt"
 
 ``` cmake
@@ -103,7 +103,7 @@ rmdir build /S /Q
 ___
 
 <a name="libraries"></a>
-## :two: libraries
+### :two: libraries
 
 ### Part 1/3 Create CMake File "CMakeLists.txt"
 ``` cmake
