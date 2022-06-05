@@ -15,6 +15,7 @@ add_executable(my_exe main.cpp math.cpp)
 
 ### Part 2/3 Create File "main.cpp math.hpp math.cpp"
 
+main.cpp
 ``` cpp
 #include <iostream>
 #include "math.hpp"
@@ -27,11 +28,13 @@ int main(int argc, char **argv){
 
 ```
 
-``` cpp
+math.hpp
+``` hpp
 #pragma once
 int sum(int a, int b);
 ```
 
+math.cpp
 ``` cpp
 #include "math.hpp"
 int sum(int a, int b){
@@ -44,3 +47,5 @@ int sum(int a, int b){
 cd
 
 ```
+
+#7
