@@ -18,7 +18,7 @@ project(myproject LANGUAGES CXX)
 add_executable(my_exe main.cpp math.cpp)
 ```
 
-### Part 2/3 Create C++ Files "main.cpp math.hpp math.cpp"
+### Part 2/3 Create C++ Files "main.cpp"
 
 main.cpp
 ``` cpp
