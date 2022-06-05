@@ -190,7 +190,10 @@ cmake -G "Visual Studio 16 2019" ..
 cmake --build .
 Debug\my_exe
 Debug\my_exe_2 
+```
 
+Delete build folder to repeat the process
+```
 rmdir build /S /Q
 ```
 
