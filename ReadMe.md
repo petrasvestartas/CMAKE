@@ -1,5 +1,7 @@
 # CMAKE TUTORIALS
 
+[NOTE](# Notes)
+
 ## FOLDER: minimal_example 
 ### Part 1/3 Create File "CMakeLists.txt"
 
