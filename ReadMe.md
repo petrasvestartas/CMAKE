@@ -27,7 +27,7 @@ int main(int argc, char **argv){
 
 ```
 
-``` hpp
+``` cpp
 #pragma once
 int sum(int a, int b);
 ```
