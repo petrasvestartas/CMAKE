@@ -1,8 +1,10 @@
 # CMake Tutorials
 
-[Libraries](#Libraries)
+[minimal_example](#minimal_example)
+[libraries](#libraries)
 
-## ___ Minimal Example ___
+<a name="minimal_example"></a>
+## ___ minimal_example ___
 ### Part 1/3 Create File "CMakeLists.txt"
 
 ``` cmake
@@ -93,8 +95,8 @@ Remove folders and files, be one directory back, outside the folder
 rmdir build /S /Q
 ```
 
-<a name="Libraries"></a>
-## ___ Libraries ___
+<a name="libraries"></a>
+## ___ libraries ___
 
 
 # Notes
