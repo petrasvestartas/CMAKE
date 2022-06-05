@@ -10,7 +10,7 @@ cmake_minimum_required(VERSION 3.0)
 # after project name there are multiple options
 project(myproject LANGUAGES CXX)
 
-# INCLUDE SUBPROJECT NAME "mainExec", WHERE FILE "main.cpp" WILL BE PLACED
+# include subproject name "my_exe", where file "main.cpp" will be aďded
 # header files are referenced automatically, but you need to include source files
 add_executable(my_exe main.cpp math.cpp)
 
