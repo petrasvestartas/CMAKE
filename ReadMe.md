@@ -126,6 +126,7 @@ add_library(math_lib STATIC math.cpp)
 add_executable(my_exe main.cpp math.cpp)
 add_executable(my_exe_2 main_2.cpp math.cpp)
 
+#target a cpp project with a PUBLIC / PRIVATE / INTERFACE library
 target_link_libraries(my_exe PUBLIC math_lib)
 target_link_libraries(my_exe_2 PUBLIC math_lib)
 ```
