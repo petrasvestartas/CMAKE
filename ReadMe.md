@@ -1,6 +1,7 @@
 # CMake Tutorials
 
 [minimal_example](#minimal_example)
+
 [libraries](#libraries)
 
 <a name="minimal_example"></a>
