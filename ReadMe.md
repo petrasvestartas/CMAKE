@@ -112,9 +112,14 @@ add_library(LIBRARY_NAME STATIC/SHARED/OBJECT source1.cpp source2.cpp)
 target_link_libraries(my_exe PUBLIC math_lib)
 ```
 
-by default - STATIC library, or you change during configuration jn bash:
+by default - STATIC library, or you change during configuration in bash:
 ```
-cmake -DBUILD_SHARED_LIBS=ON
+cmake -DBUILD_SHARED_LIBS=ON ..
+```
+instead of
+```
+cmake ..
+
 ```
 
 #### Part 1/3 Create CMake File "CMakeLists.txt"
