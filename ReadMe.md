@@ -145,13 +145,53 @@ target_link_libraries(my_exe_2 PUBLIC math_lib)
 
 main.cpp
 ``` cpp
-code
+#include <iostream>
+#include "math.hpp"
+
+int main(int argc, char **argv){
+ std::cout << "Hi \n";
+ std::cout << "Call sum function from header: " << sum(2,3) << "\n";
+ return 0;
+}
+```
+
+main_2.cpp
+``` cpp
+#include <iostream>
+#include "math.hpp"
+
+int main(int argc, char **argv){
+ std::cout << "main_2 \n";
+ std::cout << "Call sum function from header: " << sum(1,1) << "\n";
+ return 0;
+}
+```
+
+math.hpp
+``` cpp
+#pragma once
+int sum(int a, int b);
+```
+
+math.cpp
+``` cpp
+#include "math.hpp"
+int sum(int a, int b){
+ return a+b;
+}
 ```
 
 #### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
-What
+Bash
 ```
-code
+mkdir build
+cd build
+cmake -G "Visual Studio 16 2019" ..
+cmake --build .
+Debug\my_exe
+Debug\my_exe_2 
+
+rmdir build /S /Q
 ```
 
 
