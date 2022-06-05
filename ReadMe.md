@@ -1,6 +1,6 @@
 # CMake Tutorials
 
-## 1 Create Simple Project
+## 1 Minimal Example
 ### Part 1/3 Create File "CMakeLists.txt"
 ``` cmake
 
