@@ -4,13 +4,7 @@
 * [libraries](#libraries)
 
 
-<style>       
-    hr{
-        height: 1px;
-        background-color: #ccc;
-        border: none;
-    }
-</style>
+<span style="color:blue">some *blue* text</span>.
 
 
 
