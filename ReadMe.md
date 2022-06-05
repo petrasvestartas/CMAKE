@@ -80,6 +80,7 @@ cmake ..
 
 Option 3 - Configure and Generate using Visual Studio compiler
 https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
+https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html
 ```
 cmake -G "Visual Studio 16 2019" ..
 ```
