@@ -15,7 +15,7 @@ project(myproject LANGUAGES CXX)
 add_executable(my_exe main.cpp math.cpp)
 
 # print a message
-message("Hello World!")
+message("Hello World from CMakeLists!")
 
 
 ```
