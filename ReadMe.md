@@ -7,8 +7,10 @@
 
 cmake_minimum_required(VERSION 3.0)
 
+# after project name there are multiple options
 project(myproject LANGUAGES CXX)
 
+# header files are referenced automatically, bur you need to include source files
 add_executable(my_exe main.cpp math.cpp)
 
 ```
