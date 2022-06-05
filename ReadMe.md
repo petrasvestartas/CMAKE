@@ -83,7 +83,7 @@ cmake --build .
 
 Run the executable C:\Test\build\Debug
 ```
-my_exe.exe
+Debug\my_exe
 ```
 
 Remove folders and files, be one directory back, outside the folder
