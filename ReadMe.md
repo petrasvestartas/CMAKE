@@ -3,7 +3,14 @@
 * [minimal_example](#minimal_example)
 * [libraries](#libraries)
 
-<hr style="border:2px solid blue">
+<style>       
+    hr{
+        height: 1px;
+        background-color: #ccc;
+        border: none;
+    }
+</style>
+
 
 ***
 
