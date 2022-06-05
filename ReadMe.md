@@ -9,7 +9,7 @@
 <a name="minimal_example"></a>
 ___
 ## :one: minimal_example 
-### Part 1/3 Create File "CMakeLists.txt"
+### Part 1/3 Create CMake File "CMakeLists.txt"
 
 ``` cmake
 
@@ -28,7 +28,7 @@ message("Hello World from CMakeLists!")
 
 ```
 
-### Part 2/3 Create File "main.cpp math.hpp math.cpp"
+### Part 2/3 Create C++ Files "main.cpp math.hpp math.cpp"
 
 main.cpp
 ``` cpp
@@ -57,7 +57,7 @@ int sum(int a, int b){
 }
 ```
 
-### Part 3/3 Bash Commands - Configure and Generate
+### Part 3/3 Run Bash Commands - Configure and Generate
 
 
 Be sure to be in the folder where the file is "main.cpp" 
@@ -102,5 +102,8 @@ rmdir build /S /Q
 <a name="libraries"></a>
 ## :two: libraries
 
+### Part 1/3 Create CMake File "CMakeLists.txt"
+### Part 2/3 Create C++ Files "main.cpp math.hpp math.cpp"
+### Part 3/3 Run Bash Commands - Configure and Generate
 
 
