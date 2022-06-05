@@ -100,6 +100,8 @@ Remove folders and files, be one directory back, outside the folder
 rmdir build /S /Q
 ```
 
+___
+
 <a name="libraries"></a>
 ## :two: libraries
 
@@ -118,7 +120,7 @@ main.cpp
 code
 ```
 
-### Part 3/3 Run Bash Commands - Configure and Generate
+### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
 What
 ```
 code
