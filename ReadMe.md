@@ -55,11 +55,6 @@ int sum(int a, int b){
 ### Part 3/3 Bash Commands
 
 
-Create folder
-```
-mkdir name
-```
-
 Remove folders and files
 You must be one directory back, outside the folder
 ```
@@ -72,17 +67,31 @@ Be sure to be in the folder where the file is "main.cpp"
 
 You must create "Build" folder before 
 
-You can specify default compiler by ".." or select a specific compiler (-G "generator type" ) 
+You can use the default compiler by ".." or select a specific compiler (-G "generator type" ) 
 
 Links:
 * https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
 * https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html
 
+
+Create directory
 ```
 mkdir build
-cmake . (Configure)
-cmake .. (Configure and Generate)
-cmake -G "CompilerName e.g. Visual Studio 16 2019" ..
+```
+
+Option 1 - Configure
+```
+cmake . 
+```
+
+Option 2 - Configure and Generate
+```
+cmake .. 
+```
+
+Option 3 - Configure and Generate using Visual Studio compiler
+```
+cmake -G "Visual Studio 16 2019" ..
 ```
  
 Build the generated project e.g. in dir C:\Test\build
