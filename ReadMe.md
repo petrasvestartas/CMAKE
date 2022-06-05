@@ -14,9 +14,6 @@ project(myproject LANGUAGES CXX)
 # header files are referenced automatically, but you need to include source files
 add_executable(my_exe main.cpp math.cpp)
 
-#INCLUDE SUB-PROJECTS - NOT SURE WHAT THIS MEANS
-add_subdirectory ("CMakeProject1")
-
 # print a message
 message("Hello World!")
 
@@ -95,7 +92,11 @@ Remove folders and files, be one directory back, outside the folder
 rmdir build /S /Q
 ```
 
+# Notes
 
-
+``` cmake
+#INCLUDE SUB-PROJECTS - NOT SURE WHAT THIS MEANS
+add_subdirectory ("CMakeProject1")
+``` 
 
 #7
