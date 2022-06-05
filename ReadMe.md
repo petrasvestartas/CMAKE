@@ -70,8 +70,8 @@ BE SURE TO BE IN THE FOLDER WHERE THE FILE IS "main.cpp"
 YOU MUST CREATE "build" FOLDER BEFORE 
 YOU CAN SPECIFY DEFAULT COMPILER BY ".." OR SELECT A SPECIFIC COMPILER (-G Generator ) 
 LINKS:
-https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
-https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html
+* https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
+* https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html
 
 ```
 mkdir build
