@@ -54,9 +54,8 @@ int sum(int a, int b){
 
 ### Part 3/3 Bash Commands
 ``` bash
-BASH COMANDS
 
-CREATE FOLDER
+# CREATE FOLDER
 	• mkdir name
 REMOVE FOLDERS AND FILES, BEFORE YOU MUST GO BACK TO PREVIOUS FOLDER
 	• rmdir build /S /Q
@@ -81,7 +80,6 @@ RUN THE EXCUTABLE IN C:\Test\build\Debug
 	• mainExec.exe
 
 IF YOU DO NOT WANT TO USE VISUAL STUDIO COMPILER YOU CAN RUN "MINGW" 
-![image](https://user-images.githubusercontent.com/18013985/172043935-79e180ad-e4dd-4132-832a-c9c1493c5ffd.png)
 
 
 ```
