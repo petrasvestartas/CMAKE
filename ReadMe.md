@@ -108,8 +108,9 @@ ___
 there are two steps - creating library and linking library:
 * add_library(LIBRARY_NAME STATIC/SHARED/OBJECT source1.cpp source2.cpp)
 * target_link_libraries(my_exe PUBLIC math_lib)
+*
 
-* by default - static library
+* by default - STATIC library
 * cmake -DBUILD_SHARED_LIBS=ON changes defaults
 
 
@@ -119,10 +120,14 @@ there are two steps - creating library and linking library:
 cmake_minimum_required(VERSION 3.0)
 project(myproject LANGUAGES CXX)
 
-add_library(math_lib math.cpp)
+# STATIC / SHARED
+add_library(math_lib STATIC math.cpp)
 
 add_executable(my_exe main.cpp math.cpp)
 add_executable(my_exe_2 main_2.cpp math.cpp)
+
+target_link_libraries(my_exe PUBLIC math_lib)
+target_link_libraries(my_exe_2 PUBLIC math_lib)
 ```
 
 #### Part 2/3 Create C++ Files "main.cpp"
