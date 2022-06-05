@@ -3,8 +3,9 @@
 * [minimal_example](#minimal_example)
 * [libraries](#libraries)
 
-***
 <hr style="border:2px solid blue">
+***
+
 
 <a name="minimal_example"></a>
 ___
