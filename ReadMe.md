@@ -107,7 +107,6 @@ rmdir build /S /Q
 
 cmake_minimum_required(VERSION 3.0)
 project(myproject LANGUAGES CXX)
-
 add_executable(my_exe main.cpp math.cpp)
 ```
 
