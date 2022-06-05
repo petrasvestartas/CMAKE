@@ -8,7 +8,7 @@
 
 <a name="minimal_example"></a>
 ___
-## 🔴 minimal_example 🔴
+## :one: minimal_example 
 ### Part 1/3 Create File "CMakeLists.txt"
 
 ``` cmake
@@ -100,7 +100,7 @@ rmdir build /S /Q
 ```
 
 <a name="libraries"></a>
-## ___ libraries ___
+## :two: libraries
 
 
 
