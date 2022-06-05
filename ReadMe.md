@@ -1,6 +1,6 @@
-# CMake Tutorials
+# CMAKE TUTORIALS
 
-## ___ Minimal Example ___
+## FOLDER: minimal_example 
 ### Part 1/3 Create File "CMakeLists.txt"
 
 ``` cmake
@@ -91,7 +91,7 @@ Remove folders and files, be one directory back, outside the folder
 rmdir build /S /Q
 ```
 
-## ___ Libraries ___
+## FOLDER: libraries 
 
 # Notes
 
