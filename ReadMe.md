@@ -57,19 +57,18 @@ Be sure to be in the folder where the file is "main.cpp"
 Create directory, before you start
 ```
 mkdir build
+cd build
 ```
 
-Option 1 - Configure
-```
-cmake . 
-```
 
-Option 2 - Configure and Generate using default compiler
+Option 1 - Configure and Generate using default compiler 
+two dots means you are in build folder and CMakeLists.txt is in the previous one including source files
+one dot means that CMakeLists.txt and source files are in build folder
 ```
 cmake .. 
 ```
 
-Option 3 - Configure and Generate using Visual Studio compiler
+Option 2 - Configure and Generate using Visual Studio compiler
 https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
 https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html
 Other compilers: mingw, ninja
