@@ -75,7 +75,7 @@ LINKS:
 
 ```
 mkdir build
-cmake . (Configure )
+cmake . (Configure)
 cmake .. (Configure and Generate)
 cmake -G "CompilerName e.g. Visual Studio 16 2019" ..
 ```
