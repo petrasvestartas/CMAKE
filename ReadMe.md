@@ -4,15 +4,11 @@
 * [libraries](#libraries)
 
 
-<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
-
-
-***
 
 
 <a name="minimal_example"></a>
 ___
-## ___ minimal_example ___
+## 🔴 minimal_example 🔴
 ### Part 1/3 Create File "CMakeLists.txt"
 
 ``` cmake
