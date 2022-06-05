@@ -57,10 +57,10 @@ int sum(int a, int b){
 }
 ```
 
-### Part 3/3 Run Bash Commands - Configure and Generate
+### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
 
 
-Be sure to be in the folder where the file is "main.cpp" 
+Be sure to be in the folder where the files are "CMakeLists.txt" and "main.cpp" 
 
 Create directory, before you start
 ```
