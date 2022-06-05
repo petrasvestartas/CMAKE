@@ -5,7 +5,8 @@
 
 
 
-***
+___
+
 <a name="minimal_example"></a>
 ___
 ## :one: minimal_example 
