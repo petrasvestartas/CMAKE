@@ -29,7 +29,7 @@ message("Hello World from CMakeLists!")
 
 ```
 
-### Part 2/3 Create C++ Files "main.cpp math.hpp math.cpp"
+#### Part 2/3 Create C++ Files "main.cpp math.hpp math.cpp"
 
 main.cpp
 ``` cpp
@@ -58,7 +58,7 @@ int sum(int a, int b){
 }
 ```
 
-### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
+#### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
 
 
 Be sure to be in the folder where the files are "CMakeLists.txt" and "main.cpp" 
@@ -105,7 +105,7 @@ ___
 <a name="libraries"></a>
 ### :two: libraries
 
-### Part 1/3 Create CMake File "CMakeLists.txt"
+#### Part 1/3 Create CMake File "CMakeLists.txt"
 ``` cmake
 
 cmake_minimum_required(VERSION 3.0)
@@ -113,14 +113,14 @@ project(myproject LANGUAGES CXX)
 add_executable(my_exe main.cpp math.cpp)
 ```
 
-### Part 2/3 Create C++ Files "main.cpp"
+#### Part 2/3 Create C++ Files "main.cpp"
 
 main.cpp
 ``` cpp
 code
 ```
 
-### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
+#### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
 What
 ```
 code
