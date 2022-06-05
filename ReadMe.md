@@ -116,10 +116,10 @@ by default - STATIC library, or you change during configuration in bash:
 ```
 cmake -DBUILD_SHARED_LIBS=ON ..
 ```
+
 instead of
 ```
 cmake ..
-
 ```
 
 #### Part 1/3 Create CMake File "CMakeLists.txt"
