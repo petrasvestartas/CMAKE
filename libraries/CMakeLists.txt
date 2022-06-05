@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0)
 project(myproject LANGUAGES CXX)
 
 # library name, library type STATIC / SHARED, and source files
-add_library(math_lib STATIC math.cpp)
+add_library(math_lib SHARED math.cpp)
 
 # you do not need to specify math.cpp files anymore, since they are in math_lib
 add_executable(my_exe main.cpp)
