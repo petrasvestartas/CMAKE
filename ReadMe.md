@@ -55,15 +55,9 @@ int sum(int a, int b){
 ### Part 3/3 Bash Commands - Configure and Generate
 
 
-
-
 Be sure to be in the folder where the file is "main.cpp" 
 
-
-
-
-
-Create directory, before You start
+Create directory, before you start
 ```
 mkdir build
 ```
@@ -81,6 +75,7 @@ cmake ..
 Option 3 - Configure and Generate using Visual Studio compiler
 https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
 https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html
+Other compilers: mingw, ninja
 ```
 cmake -G "Visual Studio 16 2019" ..
 ```
@@ -96,15 +91,10 @@ my_exe.exe
 ```
 
 Remove folders and files, be one directory back, outside the folder
-
 ```
-
 rmdir build /S /Q
-
 ```
 
-
-Other compilers: mingw, ninja
 
 
 
