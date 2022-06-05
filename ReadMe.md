@@ -10,7 +10,7 @@ ___
 <a name="minimal_example"></a>
 
 ### :one: minimal_example 
-### Part 1/3 Create CMake File "CMakeLists.txt"
+#### Part 1/3 Create CMake File "CMakeLists.txt"
 
 ``` cmake
 
