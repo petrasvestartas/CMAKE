@@ -96,7 +96,7 @@ my_exe.exe
 ```
 
 
-IF YOU DO NOT WANT TO USE VISUAL STUDIO COMPILER YOU CAN RUN "MINGW" 
+Other compilers: mingw, ninja
 
 
 
