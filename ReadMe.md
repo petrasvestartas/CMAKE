@@ -192,7 +192,7 @@ Debug\my_exe
 Debug\my_exe_2 
 ```
 
-Delete build to repeat the process
+Delete build folder to repeat the process
 ```
 rmdir build /S /Q
 ```
