@@ -20,7 +20,7 @@ message("Hello World from CMakeLists!")
 
 ```
 
-### Part 2/3 Create File "main.cpp math.hpp math.cpp"
+### Part 2/3 Create Files "main.cpp math.hpp math.cpp"
 
 main.cpp
 ``` cpp
@@ -49,7 +49,7 @@ int sum(int a, int b){
 }
 ```
 
-### Part 3/3 Bash Commands - Configure -> Generate -> Build -> Run
+### Part 3/3 Bash Commands: Configure -> Generate -> Build -> Run
 
 
 Be sure to be in the folder where the file is "main.cpp" 
