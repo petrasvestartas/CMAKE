@@ -49,7 +49,7 @@ int sum(int a, int b){
 }
 ```
 
-### Part 3/3 Bash Commands - Configure and Generate
+### Part 3/3 Bash Commands - Configure -> Generate -> Build -> Run
 
 
 Be sure to be in the folder where the file is "main.cpp" 
