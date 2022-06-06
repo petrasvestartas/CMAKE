@@ -139,8 +139,14 @@ cmake ..
 cmake_minimum_required(VERSION 3.0)
 project(myproject LANGUAGES CXX)
 
+#only for windows
+if (MSVC)
+	message("Petras is talking to you: MSVC Compiler, this line is not needed if MinGW compiler is used")
+	set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+endif (MSVC)
+
 # library name, library type STATIC / SHARED, and source files
-add_library(math_lib STATIC math.cpp)
+add_library(math_lib math.cpp math.hpp)
 
 # you do not need to specify math.cpp files anymore, since they are in math_lib
 add_executable(my_exe main.cpp)
@@ -221,9 +227,4 @@ Delete build folder to repeat the process
 rmdir build /S /Q
 ```
 
-Visual studio compiler will complain during building, in that case use the line below following the explanation:
-<https://stackoverflow.com/questions/40739061/error-lnk1104-cannot-open-file-debug-myprojectlib-lib/40743080#40743080>
 
-```
-set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
-```
