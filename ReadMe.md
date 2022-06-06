@@ -132,7 +132,8 @@ target_link_libraries(my_exe PUBLIC math_lib)
 cmake_minimum_required(VERSION 3.0)
 project(myproject LANGUAGES CXX)
 
-#only for windows
+# only for windows
+# https://stackoverflow.com/questions/40739061/error-lnk1104-cannot-open-file-debug-myprojectlib-lib/40743080#40743080
 if (MSVC)
  message("Petras is talking to you: MSVC Compiler, this line is not needed if MinGW compiler is used")
  set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
