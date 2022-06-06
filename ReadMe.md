@@ -3,13 +3,12 @@
 * [minimal_example](#minimal_example)
 * [libraries](#libraries)
 
-
-
 ___
 
 <a name="minimal_example"></a>
 
-### :one: minimal_example 
+### :one: minimal_example
+
 #### Part 1/3 Create CMake File "CMakeLists.txt"
 
 ``` cmake
@@ -32,6 +31,7 @@ message("Hello World from CMakeLists!")
 #### Part 2/3 Create C++ Files "main.cpp math.hpp math.cpp"
 
 main.cpp
+
 ``` cpp
 #include <iostream>
 #include "math.hpp"
@@ -45,12 +45,14 @@ int main(int argc, char **argv){
 ```
 
 math.hpp
+
 ``` hpp
 #pragma once
 int sum(int a, int b);
 ```
 
 math.cpp
+
 ``` cpp
 #include "math.hpp"
 int sum(int a, int b){
@@ -60,42 +62,47 @@ int sum(int a, int b){
 
 #### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
 
-
-Be sure to be in the folder where the files are "CMakeLists.txt" and "main.cpp" 
+Be sure to be in the folder where the files are "CMakeLists.txt" and "main.cpp"
 
 Create directory, before you start
+
 ```
 mkdir build
 cd build
 ```
 
-
-Option 1 - Configure and Generate using default compiler 
+Option 1 - Configure and Generate using default compiler
 two dots means you are in build folder and CMakeLists.txt is in the previous one including source files
 one dot means that CMakeLists.txt and source files are in build folder
+
 ```
 cmake .. 
 ```
 
 Option 2 - Configure and Generate using Visual Studio compiler
-* https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
-* https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html
+
+* <https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html>
+* <https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2017%202022.html>
 * Other compilers: mingw, ninja
+
 ```
 cmake -G "Visual Studio 16 2019" ..
 ```
- 
+
 Build the generated project e.g. in dir C:\Test\build
+
 ```
 cmake --build .
 ```
 
 Run the executable C:\Test\build\Debug
+
 ```
 Debug\my_exe
 ```
 
 Remove folders and files, be one directory back, outside the folder
+
 ```
 rmdir build /S /Q
 ```
@@ -103,6 +110,7 @@ rmdir build /S /Q
 ___
 
 <a name="libraries"></a>
+
 ### :two: libraries
 
 there are two steps - creating library and linking library:
@@ -113,16 +121,19 @@ target_link_libraries(my_exe PUBLIC math_lib)
 ```
 
 by default if you can skip STATIC/SHARED/OBJECT keyword, and specify this during generate and configuration in bash:
+
 ```
 cmake -DBUILD_SHARED_LIBS=ON ..
 ```
 
 instead of
+
 ```
 cmake ..
 ```
 
 #### Part 1/3 Create CMake File "CMakeLists.txt"
+
 ``` cmake
 
 cmake_minimum_required(VERSION 3.0)
@@ -144,6 +155,7 @@ target_link_libraries(my_exe_2 PUBLIC math_lib)
 #### Part 2/3 Create C++ Files "main.cpp main_2.cpp math.hpp math.cpp"
 
 main.cpp
+
 ``` cpp
 #include <iostream>
 #include "math.hpp"
@@ -156,6 +168,7 @@ int main(int argc, char **argv){
 ```
 
 main_2.cpp
+
 ``` cpp
 #include <iostream>
 #include "math.hpp"
@@ -168,12 +181,14 @@ int main(int argc, char **argv){
 ```
 
 math.hpp
+
 ``` cpp
 #pragma once
 int sum(int a, int b);
 ```
 
 math.cpp
+
 ``` cpp
 #include "math.hpp"
 int sum(int a, int b){
@@ -182,19 +197,33 @@ int sum(int a, int b){
 ```
 
 #### Part 3/3 Run Bash Commands: Configure -> Generate -> Build -> Run
+
 Bash
+
 ```
 mkdir build
 cd build
-cmake -G "Visual Studio 16 2019" ..
+cmake -DBUILD_SHARED_LIBS=ON -G "Visual Studio 16 2019" ..
 cmake --build .
 Debug\my_exe
 Debug\my_exe_2 
 ```
 
+If MinGW is installed:
+
+```
+cmake -DBUILD_SHARED_LIBS=ON -G "MinGW Makefiles" ..
+```
+
 Delete build folder to repeat the process
+
 ```
 rmdir build /S /Q
 ```
 
+Visual studio compiler will complain during building, in that case use the line below following the explanation:
+<https://stackoverflow.com/questions/40739061/error-lnk1104-cannot-open-file-debug-myprojectlib-lib/40743080#40743080>
 
+```
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+```
