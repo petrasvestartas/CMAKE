@@ -2,6 +2,11 @@
 
 * [minimal_example](#minimal_example)
 * [libraries](#libraries)
+* [variables](#variables)
+* [cache_variables](#cache_variables)
+* [options](#options)
+* [lists](#lists)
+* [numeric_values](#numeric_values)
 
 ___
 
@@ -120,7 +125,6 @@ add_library(LIBRARY_NAME STATIC/SHARED/OBJECT source1.cpp source2.cpp)
 target_link_libraries(my_exe PUBLIC math_lib)
 ```
 
-
 #### Part 1/3 Create CMake File "CMakeLists.txt"
 
 ``` cmake
@@ -130,8 +134,8 @@ project(myproject LANGUAGES CXX)
 
 #only for windows
 if (MSVC)
-	message("Petras is talking to you: MSVC Compiler, this line is not needed if MinGW compiler is used")
-	set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+ message("Petras is talking to you: MSVC Compiler, this line is not needed if MinGW compiler is used")
+ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 endif (MSVC)
 
 # library name, library type STATIC / SHARED, and source files
@@ -204,16 +208,251 @@ Debug\my_exe
 Debug\my_exe_2 
 ```
 
-If MinGW is installed:
+<a name="variables"></a>
+
+### :three: variables
+
+All vaiables in CMake are strings
+For syntax testing .cmake file is created
+
+examples:
+
+* A run cmake file string_example.cmake
+* B run CMakeLists.txt
+
+#### Part A 1/2 CMake files
+
+``` cmake
+
+#message
+message("Hello World!")
+
+#create and set variables
+set(FOO "Foo Value")
+
+#get values
+message("${FOO}")
+
+#Variable concatenation 
+#Example using "." symbol, by default concatenation is made using ";"
+set(MY_PROJECT_MAJOR "1")
+set(MY_PROJECT_MINOR "2")
+set(MY_PROJECT_PATCH "3")
+set(MY_PROJECT_VERSION  ${MY_PROJECT_MAJOR} ${MY_PROJECT_MINOR} ${MY_PROJECT_PATCH} )
+message("${MY_PROJECT_VERSION}")
+set(MY_PROJECT_VERSION "${MY_PROJECT_MAJOR}.${MY_PROJECT_MINOR}.${MY_PROJECT_PATCH}")
+message("${MY_PROJECT_VERSION}")
+
+#Manipulation of strings
+set(PLATFORM "WINDOWS")
+set(HELLO_MESSAGE_WINDOWS "Hello W-I-N-D-O-W-S OS")
+set(HELLO_MESSAGE_UNIX "Hello U-N-I-X OS")
+message("HELLO_MESSAGE_${PLATFORM} = ${HELLO_MESSAGE_${PLATFORM}}")
+
+#Multi-line format using "[[" and "]]"
+set(HELLO_MESSAGE [[
+echo "Hello
+World!
+]])
+message("${HELLO_MESSAGE}")
+```
+
+#### Part A 2/2 Run Bash Commands
+
+bash
+
+``` bash
+cmake -P string_example.cmake
+```
+
+#### Part B 1/2 CMakeList strings
+
+CMakeLists
+
+``` cmake
+cmake_minimum_required(VERSION 3.0)
+project(strings_example)
+
+#string documentation
+#https://cmake.org/cmake/help/latest/command/string.html
+
+#stores the first positions at which the string is found e.g. -1, 0 or 3
+string(FIND "abcdefgh" "def" FIND_RESULT REVERSE)
+message("FIND_RESULT: ${FIND_RESULT}")
+
+#replace the first instance of the string with the second
+string(REPLACE "abc" "ABC" REPLACE_RESULT "abcdefgh")
+message("REPLACE_RESULT: ${REPLACE_RESULT}")
+
+#append to string
+set(APPEND_INPUT "Append something to me ")
+string(APPEND APPEND_INPUT "Petras")
+message("APPEND_INPUT: ${APPEND_INPUT}")
+
+#to lower case
+string(TOLOWER ${APPEND_INPUT} TOLOWER_RESULT)
+message("TOLOWER_RESULT: ${TOLOWER_RESULT}")
+```
+
+#### Part B 1/2 CMakeList bash
+
+bash
+
+``` bash
+cmake ..
+```
+
+<a name="cache_variables"></a>
+
+### :four: variables
+
+#### Part 1/2 CMakeLists.txt file
+
+CMakeLists Cache variables are kept in memory after the last generation
+
+``` cmake
+cmake_minimum_required(VERSION 3.0)
+project(cache_example)
+
+#Normal variable is empty if the CMakeLists is called twice
+message("NON_CACHE_VAR = ${NON_CACHE_VAR}")
+set(NON_CACHE_VAR "Initial value")
+message("NON_CACHE_VAR = ${NON_CACHE_VAR}")
+
+#Cache variables stays within multiple calls to cmake
+#FORCE keyword does not allow user to change this value
+message("CACHE_VAR = ${CACHE_VAR}")
+set(CACHE_VAR "Initial value 2" CACHE STRING "Help me with this cache variable" FORCE)
+message("CACHE_VAR = ${CACHE_VAR}")
+
+#To modify variables use -D Keyword " "cmake -DCACHE_VAR=set_by_Petras .. "
+```
+
+#### Part 2/2 Run Bash Commands
+
+Change variable using bash (no spaces)
+
+``` bash
+mkdir build
+cd build
+cmake ..
+cmake -DCACHE_VAR=set_by_Petras ..
+```
+
+<a name="options"></a>
+
+### :five: options
+
+#### Part 1/2 CMakeLists.txt file
+
+Setting boolean value using "option" keyword
+Set File and FilePaths
+Declare internal variables not visible to the user
+
+``` cmake
+cmake_minimum_required(VERSION 3.0)
+project(options)
+
+#file paths
+set(CACHE_VAR "Initial value 2" CACHE STRING "Documentation string")
+set(CACHE_VAR_FILE_PATH "C:/eigen/README.md" CACHE FILEPATH "Documentation CACHE_VAR_FILE_PATH")
+set(CACHE_VAR_PATH "C:/" CACHE PATH "Documentation CACHE_VAR_PATH")
+
+#Internal hides variable from the user interface
+set(CACHE_VAR_INTERNAL "Whatever" CACHE INTERNAL "Documentation CACHE_VAR_INTERNAL")
+
+#option keyword (boolean variable)
+#Variable name, documentation string and default value ON/OFF
+option(MY_OPTION "Help for MY_OPTION" OFF)
+
+#option is the same as below
+set(MY_OPTION2 OFF CACHE BOOL "Help for MY_OPTION")
 
 ```
-cmake -DBUILD_SHARED_LIBS=ON -G "MinGW Makefiles" ..
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+``` bash
+mkdir build
+cd build
+cmake ..
 ```
 
-Delete build folder to repeat the process
+gui in the folder where the cache is
+
+``` bash
+cmake-gui .
+```
+
+<a name="lists"></a>
+
+### :six: lists
+
+#### Part 1/2 CMakeLists.txt file
+
+``` cmake
+cmake_minimum_required(VERSION 3.0)
+project(lists)
+
+#https://cmake.org/cmake/help/latest/command/list.html
+#List is defined my "MY_LIST" keyword, but not be within " "
+#In CMake lists are separated by ";" even within " "
+set(MY_LIST a b c d eee fff g)
+message("MY_LIST: ${MY_LIST}")
+
+#list length
+list(LENGTH MY_LIST MY_LIST_LENGTH)
+message("MY_LIST_LENGTH: ${MY_LIST_LENGTH}")
+
+#list get
+list(GET MY_LIST 2 MY_LIST_GET)
+message("MY_LIST_GET: ${MY_LIST_GET}")
+
+#list join concatenate all elements with a separator    
+list(JOIN MY_LIST "+" MY_LIST_JOIN)
+message("MY_LIST_JOIN: ${MY_LIST_JOIN}")
+
+#list join concatenate all elements with a separator    
+list(APPEND MY_LIST PETRAS VESTARTAS)
+message("MY_LIST: ${MY_LIST}")
 
 ```
-rmdir build /S /Q
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+``` bash
+cmake ..
 ```
 
+<a name="numeric_values"></a>
 
+### :seven: numeric_values
+
+#### Part 1/2 CMakeLists.txt file
+
+``` cmake
+cmake_minimum_required(VERSION 3.0)
+project(numeric_values)
+
+
+set (x "1")
+set (y 3)
+set (z "4")
+
+#(x+y)*z
+math(EXPR result "(${x}+${y})*${z}")
+message("result: ${result}")
+
+```
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+``` bash
+cmake ..
+```
