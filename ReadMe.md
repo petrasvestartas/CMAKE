@@ -113,7 +113,7 @@ ___
 
 ### :two: libraries
 
-there are two steps - creating library and linking library, if library keyowrd is omitted by default STATIC library is built:
+there are two steps - creating library and linking project to the library, if library keyowrd is omitted by default STATIC library is built:
 
 ``` cmake
 add_library(LIBRARY_NAME STATIC/SHARED/OBJECT source1.cpp source2.cpp)
