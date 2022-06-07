@@ -822,24 +822,6 @@ ___
 
 #### Part 1/2 CMakeLists.txt file
 
-src/print/CMakeLists.txt contains such a linking procedure:
-
-```cmake
-project(print)
-
-add_library(my_print_lib print.cpp)
-
-#special linking to header in include directory:
-target_include_directories(my_print_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/print)
-```
-
-src/CMakeLists.txt folder links sub-folder like this:
-
-```cmake
-add_subdirectory(sort)
-add_subdirectory(print)
-```
-
 main CMakeLists.txt
 
 ```cmake
@@ -855,6 +837,24 @@ add_subdirectory(src)
 add_executable(${PROJECT_NAME} main.cpp)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
+```
+
+src/CMakeLists.txt folder links sub-folder like this:
+
+```cmake
+add_subdirectory(sort)
+add_subdirectory(print)
+```
+
+src/print/CMakeLists.txt contains such a linking procedure:
+
+```cmake
+project(print)
+
+add_library(my_print_lib print.cpp)
+
+#special linking to header in include directory:
+target_include_directories(my_print_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/print)
 ```
 
 #### Part 2/2 Run Bash Commands
