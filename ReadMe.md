@@ -699,7 +699,7 @@ ___
 
 <a name="project_structure"></a>
 
-### :one: :zero: :recycle: loops
+### :one::zero: :recycle: loops
 
 #### Part 1/2 CMakeLists.txt file
 
