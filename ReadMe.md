@@ -846,7 +846,7 @@ add_subdirectory(sort)
 add_subdirectory(print)
 ```
 
-src/print/CMakeLists.txt contains such a linking procedure:
+src/print/CMakeLists.txt and src/sort/CMakeLists.txt contains such a linking procedure:
 
 ```cmake
 project(print)
