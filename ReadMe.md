@@ -1,7 +1,12 @@
 # CMake Tutorials
 
+Examples:
+
 * [minimal_example](#minimal_example)
 * [libraries](#libraries)
+
+Syntax:
+
 * [variables](#variables)
 * [cache_variables](#cache_variables)
 * [options](#options)
