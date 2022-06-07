@@ -7,12 +7,13 @@
 * [options](#options)
 * [lists](#lists)
 * [numeric_values](#numeric_values)
+* [booleans](#booleans)
 
 ___
 
 <a name="minimal_example"></a>
 
-### :one: minimal_example :recycle:
+### :one: minimal_example :recycle
 
 #### Part 1/3 Create CMake File "CMakeLists.txt"
 
@@ -116,7 +117,7 @@ ___
 
 <a name="libraries"></a>
 
-### :two: libraries :recycle:
+### :two: libraries :recycle
 
 there are two steps - creating library and linking project to the library, if library keyowrd is omitted by default STATIC library is built:
 
@@ -455,5 +456,77 @@ message("result: ${result}")
 bash
 
 ``` bash
+cmake ..
+```
+
+<a name="booleans"></a>
+
+### :eight: booleans
+
+Syntax:
+
+```
+if(expression)
+...
+elsif(expression2)
+...
+else()
+...
+endif()
+```
+
+What is True or False?
+
+* True - YES, Y, TRUE, ON, Numberic values not equalt to 0, Everything else
+* False - NO, N, FALSE, OFF, IGNORE, NOTFOUND, some_library-NOTFOUND, "", 0
+
+Logical Operators
+
+* AND
+* OR
+* NOT
+
+``` cmake
+option(USE_NETWORKING "Documentation", OFF)
+option(CUSTOM_LOGGER, "Documentation", ON)
+
+if(USE_NETWORKING AND NOT CUSTOM_LOGGER)
+ #do something
+endif()
+```
+
+Comparisons
+
+* Numeric values: GREATER, GREATER_EQUAL, EQUAL, LESS, LESS_EQUAL
+* Versions (ex. 1.2.0): VERSION_GREATER, VERSION_GREATER_EQUAL, VERSION_EQUAL, VERSION_LESS, VERSION_LESS_EQUAL
+* Strings: STRGREATER, STRGREATER_EQUAL, STREQUAL, STRLESS, STRLESS_EQUAL
+
+``` cmake
+set(A 2)
+
+if(A GREATER 1)
+ #do something
+endif()
+
+
+set(MY_STRING "AAA")
+set(MY_REGEX "A")
+
+if(MY_STRING MATCHES MY_REGEX)
+ #do something
+endif()
+```
+
+#### Part 1/2 CMakeLists.txt file
+
+```cmake:booleans/CMakeLists.txt
+
+```
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+```
 cmake ..
 ```
