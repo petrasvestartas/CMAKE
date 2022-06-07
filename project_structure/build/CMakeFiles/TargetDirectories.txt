@@ -1,0 +1,7 @@
+C:/IBOIS57/_Code/Software/CPP/CMAKE/project_structure/build/CMakeFiles/sortdemo.dir
+C:/IBOIS57/_Code/Software/CPP/CMAKE/project_structure/build/CMakeFiles/ALL_BUILD.dir
+C:/IBOIS57/_Code/Software/CPP/CMAKE/project_structure/build/CMakeFiles/ZERO_CHECK.dir
+C:/IBOIS57/_Code/Software/CPP/CMAKE/project_structure/build/sort/CMakeFiles/my_sort_lib.dir
+C:/IBOIS57/_Code/Software/CPP/CMAKE/project_structure/build/sort/CMakeFiles/ALL_BUILD.dir
+C:/IBOIS57/_Code/Software/CPP/CMAKE/project_structure/build/print/CMakeFiles/my_print_lib.dir
+C:/IBOIS57/_Code/Software/CPP/CMAKE/project_structure/build/print/CMakeFiles/ALL_BUILD.dir

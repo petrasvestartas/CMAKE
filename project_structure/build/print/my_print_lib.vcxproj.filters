@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\project_structure\print\print.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\project_structure\print\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E0E70FE3-61F3-3211-900E-97D9B614B2DA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

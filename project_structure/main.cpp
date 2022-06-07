@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "sort.hpp"
-#include "print.hpp"
+#include "sort/sort.hpp"
+#include "print/print.hpp"
 
 int main(int argc, char **argv)
 {

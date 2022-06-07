@@ -701,15 +701,82 @@ ___
 
 ### :one::zero: :recycle: project_structure
 
-#### Part 1/2 CMakeLists.txt file
+if you have several libraries in several folders use command "add_subdirectory"
+in that case you will also need to create CMakeLists.txt in each folder
+
+#### Part 1/3 CMakeLists.txt files
 
 ```cmake
+cmake_minimum_required(VERSION 3.0)
+project(sortdemo)
+
+#In these subdirectories add_library methods are created
+add_subdirectory(sort)
+add_subdirectory(print)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
 ```
 
-#### Part 2/2 Run Bash Commands
+folder print
+
+```cmake
+project(print)
+message("print library")
+add_library(my_print_lib print.cpp)
+```
+
+folder sort
+
+```cmake
+project(sort)
+message("sort library")
+add_library(my_sort_lib sort.cpp)
+```
+
+#### Part 2/3 Run Bash Commands
 
 bash
 
+move files (move filename foldername)
+
+```
+move print.cpp print
+move sort.cpp sort
+```
+
+show folder structure
+
+```
+tree
+```
+
 ```
 cmake ..
+cmake --build .
+Debug\sortdemo
+```
+
+#### Part 3/3 main.cpp
+
+main.cpp must include folder directory
+
+```
+#include <iostream>
+#include "sort/sort.hpp" //here is the subdirectory similar like in CGAL -> #include <CGAL/Intersections.h>
+#include "print/print.hpp" //here is the subdirectory
+
+int main(int argc, char **argv)
+{
+  std::vector<double> example = {4, 5.4, 9.1, 1, -2.2};
+  std::cout << "Before:\n" ;
+  myPrint(example);
+  
+  mySort(example);  
+  
+  std::cout << "\nAfter:\n";
+  myPrint(example);
+  return 0;
+}
 ```

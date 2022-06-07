@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.0)
 project(myproject LANGUAGES CXX)
 
 #only for windows
-if (MSVC)
-	message("Petras is talking to you: MSVC Compiler")
-	set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
-endif (MSVC)
+#if (MSVC)
+#	message("Petras is talking to you: MSVC Compiler")
+#	set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+#endif (MSVC)
 
 # library name, library type STATIC / SHARED, and source files
 add_library(math_lib math.cpp math.hpp)
