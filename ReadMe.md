@@ -752,6 +752,8 @@ show folder structure
 tree
 ```
 
+configure, build and run
+
 ```
 cmake ..
 cmake --build .
@@ -762,7 +764,7 @@ Debug\sortdemo
 
 main.cpp must include folder directory
 
-```
+```cpp
 #include <iostream>
 #include "sort/sort.hpp" //here is the subdirectory similar like in CGAL -> #include <CGAL/Intersections.h>
 #include "print/print.hpp" //here is the subdirectory
