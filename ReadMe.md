@@ -519,7 +519,7 @@ endif()
 
 #### Part 1/2 CMakeLists.txt file
 
-```:main/booleans/CMakeLists.txt
+```:booleans/CMakeLists.txt
 
 ```
 
