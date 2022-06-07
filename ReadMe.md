@@ -792,23 +792,6 @@ ___
 
 * hpp and cpp files are separated into include and src folders,
 * only src folders and subfolders contain CMakeLists
-* src folder links sub-folder like this:
-
-```cmake
-add_subdirectory(sort)
-add_subdirectory(print)
-```
-
-* src/print/CMakeLists contains such a linking procedure:
-
-```cmake
-project(print)
-
-add_library(my_print_lib print.cpp)
-
-#special linking to header in include directory:
-target_include_directories(my_print_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/print)
-```
 
 * source files links header files with angular brackets <> instead of "" e.g. #include <print.hpp>
 * tree /f
@@ -838,6 +821,26 @@ target_include_directories(my_print_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/print
 ```
 
 #### Part 1/2 CMakeLists.txt file
+
+src/print/CMakeLists.txt contains such a linking procedure:
+
+```cmake
+project(print)
+
+add_library(my_print_lib print.cpp)
+
+#special linking to header in include directory:
+target_include_directories(my_print_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/print)
+```
+
+src/CMakeLists.txt folder links sub-folder like this:
+
+```cmake
+add_subdirectory(sort)
+add_subdirectory(print)
+```
+
+main CMakeLists.txt
 
 ```cmake
 cmake_minimum_required(VERSION 3.0)
