@@ -792,7 +792,7 @@ ___
 
 * hpp and cpp files are separated into include and src folders,
 * only src folders and subfolders contain CMakeLists
-* src folder links sub-folder like this: add_subdirectory(sort) add_subdirectory(print)
+* src folder links sub-folder like this: `add_subdirectory(sort)` `add_subdirectory(print)`
 * and inside print and source files you have such a structure
 
 ```cmake
