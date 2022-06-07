@@ -19,7 +19,7 @@ ___
 
 <a name="minimal_example"></a>
 
-### :one: minimal_example :recycle: _
+### :one: :recycle: minimal_example
 
 #### Part 1/3 Create CMake File "CMakeLists.txt"
 
@@ -123,7 +123,7 @@ ___
 
 <a name="libraries"></a>
 
-### :two: libraries :recycle: _
+### :two: :recycle: libraries  
 
 there are two steps - creating library and linking project to the library, if library keyowrd is omitted by default STATIC library is built:
 
