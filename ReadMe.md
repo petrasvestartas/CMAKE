@@ -852,7 +852,6 @@ project(sortdemo)
 # src/sort/CMakeLists.txt target_include_directories(my_sort_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/sort)
 add_subdirectory(src)
 
-
 add_executable(${PROJECT_NAME} main.cpp)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
