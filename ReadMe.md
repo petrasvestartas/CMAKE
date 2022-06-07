@@ -8,6 +8,7 @@
 * [lists](#lists)
 * [numeric_values](#numeric_values)
 * [booleans](#booleans)
+* [loops](#loops)
 
 ___
 
@@ -478,7 +479,7 @@ endif()
 What is True or False?
 
 * True - YES, Y, TRUE, ON, Numberic values not equalt to 0, Everything else
-* False - NO, N, FALSE, OFF, IGNORE, NOTFOUND, some_library-NOTFOUND, "", 0
+* False - NO, N, FALSE, OFF, Zero, IGNORE, NOTFOUND, xxx-NOTFOUND, some_library-NOTFOUND, "", 0
 
 Logical Operators
 
@@ -567,6 +568,101 @@ if (MSVC)
 else()
     add_compile_options(-Wall)
 endif()
+```
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+```
+cmake ..
+```
+
+<a name="loops"></a>
+
+### :nine: loops
+
+foreach
+
+```cmake
+foreach(currentElement arg1 arg2 arg3)
+ #do something
+endforeach()
+
+foreach(currentElement IN LISTS list1 list2)
+ #do something
+endforeach()
+
+foreach(currentElement IN LISTS list1 ITEMS extraItem1 extraItem2)
+ #do something
+endforeach()
+```
+
+while
+
+```cmake
+while(condition)
+ #do something
+endwhile()
+```
+
+iteruption
+
+```cmake
+break()
+continue()
+```
+
+#### Part 1/2 CMakeLists.txt file
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+project(loops)
+
+cmake_minimum_required(VERSION 3.0)
+project(loops)
+
+#Example 1
+set(a 1)
+
+foreach(example1 ${a} b c d e f)
+    message("example1 = ${example1}")
+endforeach()
+
+#Example 2
+set(list_a 1 2 3 4 5 6 7)
+set(list_b 10 20 30 40 50)
+
+foreach(example2 IN LISTS list_a list_b)
+    message("example2 = ${example2}")
+endforeach()
+
+
+#Example 3
+set(list_a 1 2 3 4 5 6 7)
+set(list_b 10 20 30 40 50)
+
+foreach(example3 IN LISTS list_a list_b ITEMS x y LISTS list_b)
+    message("example3 = ${example3}")
+endforeach()
+
+
+#Example 4
+set(list_a 1 2 3 4 5 6 7)
+set(list_b 10 20 30 40 50)
+set(list_c a b c)
+
+foreach(example4 IN ZIP_LISTS list_a list_b list_c)
+    message("example4 = ${example4_0} ${example4_1} ${example4_2}")
+endforeach()
+
+#Example 5 indexed for loops notice that the end is included
+#for(int i = 0; i < 10; i++)
+
+foreach(example5 RANGE 0 9)
+    message("example5 = ${example5} ")
+endforeach()
+
 ```
 
 #### Part 2/2 Run Bash Commands
