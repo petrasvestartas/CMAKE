@@ -216,6 +216,8 @@ Debug\my_exe
 Debug\my_exe_2 
 ```
 
+___
+
 <a name="variables"></a>
 
 ### :three: variables
@@ -310,6 +312,8 @@ bash
 cmake ..
 ```
 
+___
+
 <a name="cache_variables"></a>
 
 ### :four: variables
@@ -346,6 +350,8 @@ cd build
 cmake ..
 cmake -DCACHE_VAR=set_by_Petras ..
 ```
+
+___
 
 <a name="options"></a>
 
@@ -394,6 +400,8 @@ gui in the folder where the cache is
 cmake-gui .
 ```
 
+___
+
 <a name="lists"></a>
 
 ### :six: lists
@@ -436,6 +444,8 @@ bash
 cmake ..
 ```
 
+___
+
 <a name="numeric_values"></a>
 
 ### :seven: numeric_values
@@ -464,6 +474,8 @@ bash
 ``` bash
 cmake ..
 ```
+
+___
 
 <a name="booleans"></a>
 
@@ -582,6 +594,8 @@ bash
 ```
 cmake ..
 ```
+
+___
 
 <a name="loops"></a>
 
