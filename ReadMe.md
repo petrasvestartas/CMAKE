@@ -1,12 +1,12 @@
 ___
 
-###  CMake Tutorials
-
+### CMake Tutorials
 
 Examples:
 
 * [minimal_example](#minimal_example)
 * [libraries](#libraries)
+* [project_structure](#project_structure)
 
 Syntax:
 
@@ -685,6 +685,25 @@ foreach(example5 RANGE 0 9)
     message("example5 = ${example5} ")
 endforeach()
 
+```
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+```
+cmake ..
+```
+
+___
+
+<a name="project_structure"></a>
+
+### :one: :zero: loops
+
+#### Part 1/2 CMakeLists.txt file
+
+```cmake
 ```
 
 #### Part 2/2 Run Bash Commands
