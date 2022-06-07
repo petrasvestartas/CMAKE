@@ -7,6 +7,7 @@ Examples:
 * [minimal_example](#minimal_example)
 * [libraries](#libraries)
 * [project_structure](#project_structure)
+* [project_structure_source_and_include_folders](#project_structure_source_and_include_folders)
 
 Syntax:
 
@@ -781,4 +782,58 @@ int main(int argc, char **argv)
   myPrint(example);
   return 0;
 }
+```
+
+___
+
+<a name="project_structure_source_and_include_folders"></a>
+
+### :one::one: :recycle: project_structure_source_and_include_folders
+
+* hpp and cpp files are separated into include and source files, source files only contain CMakeLists
+* src folder links sub-folder like this: add_subdirectory(sort) add_subdirectory(print)
+* and inside print and source files you have such a structure
+
+```cmake
+project(print)
+message("print library")
+
+add_library(my_print_lib print.cpp)
+
+message("CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
+
+#special linking of include directory
+target_include_directories(my_print_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/print)
+
+message("CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
+```
+
+* source files links header files with angular brackets <> instead of "" e.g. #include <print.hpp>
+
+#### Part 1/2 CMakeLists.txt file
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+project(sortdemo)
+
+# In these subdirectories add_library methods are created
+add_subdirectory(src)
+# Do not need to add "include" directory because include is linked in
+# src/sort/CMakeLists.txt target_include_directories(my_sort_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/sort)
+# and src/print/CMakeLists.txt
+# add_subdirectory(include)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
+```
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+```
+cmake ..
+cmake --build
+Debug\sortdemo
 ```
