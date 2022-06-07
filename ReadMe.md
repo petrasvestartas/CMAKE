@@ -793,7 +793,7 @@ ___
 * hpp and cpp files are separated into include and src folders,
 * only src folders and subfolders contain CMakeLists
 * src folder links sub-folder like this: `add_subdirectory(sort)` `add_subdirectory(print)`
-* and inside print and source files you have such a structure
+* src/print/CMakeLists contains such a linking procedure:
 
 ```cmake
 project(print)
@@ -810,6 +810,31 @@ message("CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
 ```
 
 * source files links header files with angular brackets <> instead of "" e.g. #include <print.hpp>
+* tree /f
+
+```
+    CMakeLists.txt
+    main.cpp
+  
+    build
+    include
+    ├───print
+    │       print.hpp
+    │
+    └───sort
+            sort.hpp
+ 
+    src
+    │   CMakeLists.txt
+    │
+    ├───print
+    │       CMakeLists.txt
+    │       print.cpp
+    │
+    └───sort
+            CMakeLists.txt
+            sort.cpp
+```
 
 #### Part 1/2 CMakeLists.txt file
 
