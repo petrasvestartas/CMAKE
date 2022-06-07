@@ -790,7 +790,8 @@ ___
 
 ### :one::one: :recycle: project_structure_source_and_include_folders
 
-* hpp and cpp files are separated into include and source files, source files only contain CMakeLists
+* hpp and cpp files are separated into include and src folders,
+* only src files contain CMakeLists
 * src folder links sub-folder like this: add_subdirectory(sort) add_subdirectory(print)
 * and inside print and source files you have such a structure
 
