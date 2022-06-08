@@ -230,9 +230,12 @@ Debug\my_exe
 Debug\my_exe_2 
 ```
 
+</details>
+
 ___
 
-</details>
+<details>
+  <summary>project_structure</summary>
 
 <a name="project_structure"></a>
 
@@ -320,7 +323,12 @@ int main(int argc, char **argv)
 }
 ```
 
+</details>
+
 ___
+
+  <summary>project_structure_source_and_include_folders</summary>
+<details>
 
 <a name="project_structure_source_and_include_folders"></a>
 
@@ -403,7 +411,12 @@ cmake --build
 Debug\sortdemo
 ```
 
+</details>
+
 ______________________________________________________________________________________________________
+
+  <summary>variables</summary>
+<details>
 
 # SYNTAX
 
@@ -501,7 +514,12 @@ bash
 cmake ..
 ```
 
+</details>
+
 ___
+
+  <summary>cache_variables</summary>
+<details>
 
 <a name="cache_variables"></a>
 
@@ -540,7 +558,12 @@ cmake ..
 cmake -DCACHE_VAR=set_by_Petras ..
 ```
 
+</details>
+
 ___
+
+  <summary>options</summary>
+<details>
 
 <a name="options"></a>
 
@@ -589,7 +612,12 @@ gui in the folder where the cache is
 cmake-gui .
 ```
 
+</details>
+
 ___
+
+  <summary>lists</summary>
+<details>
 
 <a name="lists"></a>
 
@@ -633,7 +661,12 @@ bash
 cmake ..
 ```
 
+</details>
+
 ___
+
+  <summary>numeric_values</summary>
+<details>
 
 <a name="numeric_values"></a>
 
@@ -664,7 +697,12 @@ bash
 cmake ..
 ```
 
+</details>
+
 ___
+
+  <summary>booleans</summary>
+<details>
 
 <a name="booleans"></a>
 
@@ -784,7 +822,12 @@ bash
 cmake ..
 ```
 
+</details>
+
 ___
+
+  <summary>loops</summary>
+<details>
 
 <a name="loops"></a>
 
@@ -880,3 +923,7 @@ bash
 ```
 cmake ..
 ```
+
+</details>
+
+___
