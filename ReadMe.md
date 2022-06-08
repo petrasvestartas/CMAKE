@@ -22,7 +22,7 @@ Syntax:
 # EXAMPLES
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>minimal_example</summary>
 ___
 
 <a name="minimal_example"></a>
@@ -127,7 +127,11 @@ Remove folders and files, be one directory back, outside the folder
 rmdir build /S /Q
 ```
 
+</details>
 ___
+
+<details>
+  <summary>libraries</summary>
 
 <a name="libraries"></a>
 
@@ -224,6 +228,7 @@ Debug\my_exe
 Debug\my_exe_2 
 ```
 
+</details>
 ___
 
 <a name="project_structure"></a>
@@ -395,7 +400,6 @@ cmake --build
 Debug\sortdemo
 ```
 
-</details>
 ______________________________________________________________________________________________________
 
 # SYNTAX
