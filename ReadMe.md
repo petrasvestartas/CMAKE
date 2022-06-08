@@ -1008,6 +1008,7 @@ f(1 2 optional1 optional2)
 #Example 4 - function that modifies values (major.minor.path) inside file Version
 ####################################################################################
 
+#include allows to copy paste the text from another cmake file
 include(semver.cmake)
 read_sember(DEBUG_INFO FILE_NAME "VERSION" MV a b c d e)
 message("CMAKE_CURRENT_SOURCE_DIR=${CMAKE_CURRENT_SOURCE_DIR}")
