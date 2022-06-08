@@ -21,9 +21,10 @@ Syntax:
 
 # EXAMPLES
 
+___
+
 <details>
   <summary>minimal_example</summary>
-___
 
 <a name="minimal_example"></a>
 
@@ -128,6 +129,7 @@ rmdir build /S /Q
 ```
 
 </details>
+
 ___
 
 <details>
@@ -228,8 +230,9 @@ Debug\my_exe
 Debug\my_exe_2 
 ```
 
-</details>
 ___
+
+</details>
 
 <a name="project_structure"></a>
 
