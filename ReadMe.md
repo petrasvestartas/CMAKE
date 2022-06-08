@@ -222,9 +222,182 @@ Debug\my_exe_2
 
 ___
 
+<a name="project_structure"></a>
+
+### :three: :recycle: project_structure
+
+if you have several libraries in several folders use command "add_subdirectory"
+in that case you will also need to create CMakeLists.txt in each folder
+
+#### Part 1/3 CMakeLists.txt files
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+project(sortdemo)
+
+#In these subdirectories add_library methods are created
+add_subdirectory(sort)
+add_subdirectory(print)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
+```
+
+folder print
+
+```cmake
+project(print)
+message("print library")
+add_library(my_print_lib print.cpp)
+```
+
+folder sort
+
+```cmake
+project(sort)
+message("sort library")
+add_library(my_sort_lib sort.cpp)
+```
+
+#### Part 2/3 Run Bash Commands
+
+bash
+
+move files (move filename foldername)
+
+```
+move print.cpp print
+move sort.cpp sort
+```
+
+show folder structure
+
+```
+tree
+```
+
+configure, build and run
+
+```
+cmake ..
+cmake --build .
+Debug\sortdemo
+```
+
+#### Part 3/3 main.cpp
+
+main.cpp must include folder directory
+
+```cpp
+#include <iostream>
+#include "sort/sort.hpp" //here is the subdirectory similar like in CGAL -> #include <CGAL/Intersections.h>
+#include "print/print.hpp" //here is the subdirectory
+
+int main(int argc, char **argv)
+{
+  std::vector<double> example = {4, 5.4, 9.1, 1, -2.2};
+  std::cout << "Before:\n" ;
+  myPrint(example);
+  
+  mySort(example);  
+  
+  std::cout << "\nAfter:\n";
+  myPrint(example);
+  return 0;
+}
+```
+
+___
+
+<a name="project_structure_source_and_include_folders"></a>
+
+### :four: :recycle: project_structure_source_and_include_folders
+
+* hpp and cpp files are separated into include and src folders,
+* only src folders and subfolders contain CMakeLists
+
+* source files links header files with angular brackets <> instead of "" e.g. #include <print.hpp>
+* tree /f
+
+```
+    CMakeLists.txt
+    main.cpp
+  
+    build
+    include
+    ├───print
+    │       print.hpp
+    │
+    └───sort
+            sort.hpp
+ 
+    src
+    │   CMakeLists.txt
+    │
+    ├───print
+    │       CMakeLists.txt
+    │       print.cpp
+    │
+    └───sort
+            CMakeLists.txt
+            sort.cpp
+```
+
+#### Part 1/2 CMakeLists.txt file
+
+main CMakeLists.txt
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+project(sortdemo)
+
+# In these subdirectories add_library methods are created
+# Do not need to add "include" (add_subdirectory(include)) directory because include is linked in
+# src/CMakeLists.txt and src/sort/CMakeLists.txt and src/print/CMakeLists.txt
+# src/sort/CMakeLists.txt target_include_directories(my_sort_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/sort)
+add_subdirectory(src)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
+```
+
+src/CMakeLists.txt folder links sub-folder like this:
+
+```cmake
+add_subdirectory(sort)
+add_subdirectory(print)
+```
+
+src/print/CMakeLists.txt and src/sort/CMakeLists.txt contains such a linking procedure:
+
+```cmake
+project(print)
+
+add_library(my_print_lib print.cpp)
+
+#special linking to header in include directory:
+target_include_directories(my_print_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/print)
+```
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+```
+cmake ..
+cmake --build
+Debug\sortdemo
+```
+
+______________________________________________________________________________________________________
+______________________________________________________________________________________________________
+______________________________________________________________________________________________________
+
 <a name="variables"></a>
 
-### :three: variables
+### :one: variables
 
 All vaiables in CMake are strings
 For syntax testing .cmake file is created
@@ -320,7 +493,7 @@ ___
 
 <a name="cache_variables"></a>
 
-### :four: variables
+### :two: variables
 
 #### Part 1/2 CMakeLists.txt file
 
@@ -359,7 +532,7 @@ ___
 
 <a name="options"></a>
 
-### :five: options
+### :three: options
 
 #### Part 1/2 CMakeLists.txt file
 
@@ -408,7 +581,7 @@ ___
 
 <a name="lists"></a>
 
-### :six: lists
+### :four: lists
 
 #### Part 1/2 CMakeLists.txt file
 
@@ -452,7 +625,7 @@ ___
 
 <a name="numeric_values"></a>
 
-### :seven: numeric_values
+### :five: numeric_values
 
 #### Part 1/2 CMakeLists.txt file
 
@@ -483,7 +656,7 @@ ___
 
 <a name="booleans"></a>
 
-### :eight: booleans
+### :six: booleans
 
 Syntax:
 
@@ -603,7 +776,7 @@ ___
 
 <a name="loops"></a>
 
-### :nine: loops
+### :seven: loops
 
 foreach
 
@@ -694,175 +867,4 @@ bash
 
 ```
 cmake ..
-```
-
-___
-
-<a name="project_structure"></a>
-
-### :one::zero: :recycle: project_structure
-
-if you have several libraries in several folders use command "add_subdirectory"
-in that case you will also need to create CMakeLists.txt in each folder
-
-#### Part 1/3 CMakeLists.txt files
-
-```cmake
-cmake_minimum_required(VERSION 3.0)
-project(sortdemo)
-
-#In these subdirectories add_library methods are created
-add_subdirectory(sort)
-add_subdirectory(print)
-
-add_executable(${PROJECT_NAME} main.cpp)
-
-target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
-```
-
-folder print
-
-```cmake
-project(print)
-message("print library")
-add_library(my_print_lib print.cpp)
-```
-
-folder sort
-
-```cmake
-project(sort)
-message("sort library")
-add_library(my_sort_lib sort.cpp)
-```
-
-#### Part 2/3 Run Bash Commands
-
-bash
-
-move files (move filename foldername)
-
-```
-move print.cpp print
-move sort.cpp sort
-```
-
-show folder structure
-
-```
-tree
-```
-
-configure, build and run
-
-```
-cmake ..
-cmake --build .
-Debug\sortdemo
-```
-
-#### Part 3/3 main.cpp
-
-main.cpp must include folder directory
-
-```cpp
-#include <iostream>
-#include "sort/sort.hpp" //here is the subdirectory similar like in CGAL -> #include <CGAL/Intersections.h>
-#include "print/print.hpp" //here is the subdirectory
-
-int main(int argc, char **argv)
-{
-  std::vector<double> example = {4, 5.4, 9.1, 1, -2.2};
-  std::cout << "Before:\n" ;
-  myPrint(example);
-  
-  mySort(example);  
-  
-  std::cout << "\nAfter:\n";
-  myPrint(example);
-  return 0;
-}
-```
-
-___
-
-<a name="project_structure_source_and_include_folders"></a>
-
-### :one::one: :recycle: project_structure_source_and_include_folders
-
-* hpp and cpp files are separated into include and src folders,
-* only src folders and subfolders contain CMakeLists
-
-* source files links header files with angular brackets <> instead of "" e.g. #include <print.hpp>
-* tree /f
-
-```
-    CMakeLists.txt
-    main.cpp
-  
-    build
-    include
-    ├───print
-    │       print.hpp
-    │
-    └───sort
-            sort.hpp
- 
-    src
-    │   CMakeLists.txt
-    │
-    ├───print
-    │       CMakeLists.txt
-    │       print.cpp
-    │
-    └───sort
-            CMakeLists.txt
-            sort.cpp
-```
-
-#### Part 1/2 CMakeLists.txt file
-
-main CMakeLists.txt
-
-```cmake
-cmake_minimum_required(VERSION 3.0)
-project(sortdemo)
-
-# In these subdirectories add_library methods are created
-# Do not need to add "include" (add_subdirectory(include)) directory because include is linked in
-# src/CMakeLists.txt and src/sort/CMakeLists.txt and src/print/CMakeLists.txt
-# src/sort/CMakeLists.txt target_include_directories(my_sort_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/sort)
-add_subdirectory(src)
-
-add_executable(${PROJECT_NAME} main.cpp)
-
-target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
-```
-
-src/CMakeLists.txt folder links sub-folder like this:
-
-```cmake
-add_subdirectory(sort)
-add_subdirectory(print)
-```
-
-src/print/CMakeLists.txt and src/sort/CMakeLists.txt contains such a linking procedure:
-
-```cmake
-project(print)
-
-add_library(my_print_lib print.cpp)
-
-#special linking to header in include directory:
-target_include_directories(my_print_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/print)
-```
-
-#### Part 2/2 Run Bash Commands
-
-bash
-
-```
-cmake ..
-cmake --build
-Debug\sortdemo
 ```
