@@ -21,6 +21,8 @@ Syntax:
 
 # EXAMPLES
 
+<details>
+  <summary>Click to expand!</summary>
 ___
 
 <a name="minimal_example"></a>
@@ -393,6 +395,7 @@ cmake --build
 Debug\sortdemo
 ```
 
+</details>
 ______________________________________________________________________________________________________
 
 # SYNTAX
