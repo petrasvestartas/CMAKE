@@ -327,8 +327,8 @@ int main(int argc, char **argv)
 
 ___
 
-  <summary>project_structure_source_and_include_folders</summary>
 <details>
+  <summary>project_structure_source_and_include_folders</summary>
 
 <a name="project_structure_source_and_include_folders"></a>
 
@@ -415,10 +415,10 @@ Debug\sortdemo
 
 ______________________________________________________________________________________________________
 
-  <summary>variables</summary>
-<details>
-
 # SYNTAX
+
+<details>
+  <summary>variables</summary>
 
 <a name="variables"></a>
 
@@ -518,8 +518,8 @@ cmake ..
 
 ___
 
-  <summary>cache_variables</summary>
 <details>
+  <summary>cache_variables</summary>
 
 <a name="cache_variables"></a>
 
@@ -562,8 +562,8 @@ cmake -DCACHE_VAR=set_by_Petras ..
 
 ___
 
-  <summary>options</summary>
 <details>
+  <summary>options</summary>
 
 <a name="options"></a>
 
@@ -616,8 +616,8 @@ cmake-gui .
 
 ___
 
-  <summary>lists</summary>
 <details>
+  <summary>lists</summary>
 
 <a name="lists"></a>
 
@@ -665,8 +665,8 @@ cmake ..
 
 ___
 
-  <summary>numeric_values</summary>
 <details>
+  <summary>numeric_values</summary>
 
 <a name="numeric_values"></a>
 
@@ -701,8 +701,8 @@ cmake ..
 
 ___
 
-  <summary>booleans</summary>
 <details>
+  <summary>booleans</summary>
 
 <a name="booleans"></a>
 
@@ -826,8 +826,8 @@ cmake ..
 
 ___
 
-  <summary>loops</summary>
 <details>
+  <summary>loops</summary>
 
 <a name="loops"></a>
 
