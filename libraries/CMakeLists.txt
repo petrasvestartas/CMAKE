@@ -8,7 +8,7 @@ project(myproject LANGUAGES CXX)
 #endif (MSVC)
 
 # library name, library type STATIC / SHARED, and source files
-add_library(math_lib math.cpp math.hpp)
+add_library(math_lib STATIC math.cpp math.hpp)
 
 # you do not need to specify math.cpp files anymore, since they are in math_lib
 add_executable(my_exe main.cpp)

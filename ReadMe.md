@@ -8,6 +8,7 @@ Examples:
 * [libraries](#libraries)
 * [project_structure](#project_structure)
 * [project_structure_source_and_include_folders](#project_structure_source_and_include_folders)
+* [install_export](#install_export)
 
 Syntax:
 
@@ -409,6 +410,81 @@ bash
 cmake ..
 cmake --build
 Debug\sortdemo
+```
+
+</details>
+
+___
+
+<details>
+  <summary>project_structure_source_and_include_folders</summary>
+
+<a name="install_export"></a>
+
+### :five: :recycle: install_export
+
+Install location:
+
+* Windows C:\Program Files\<ProjectName> | Linux /usr/local
+* check this message("CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}") -> C:/Program Files (x86)/sortdemo
+* if this is the case, you must run x64 installer "cmake -G "Visual Studio 17 2022" -A x64 .. " instead of "cmake .."
+* you can change this directiory in bash -> cmake -DCMAKE_INSTALL_PREFIX=" " .. (But leave it to default)
+* More info: <https://stackoverflow.com/questions/72552568/cmake-include-src-and-install-directories-on-different-os/72555951#72555951>
+* Be sure you are running teminal or vscode with Administrator rights, else install will be forbidden
+
+Install function:
+
+* FILES: install(FILES include/print/print.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include/print)
+* FOLDERS : install(DIRECTORY include/print TYPE INCLUDE)
+
+Tree in the installation directory:
+
+```
+C:\Program File\
+    include
+    ├───print
+    │       print.hpp
+    │
+    └───sort
+            sort.hpp
+```
+
+#### Part 1/2 CMakeLists.txt file
+
+main CMakeLists.txt
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+
+#cmake -G "Visual Studio 17 2022" -A x64 .. && cmake --build . && cmake --install .
+message("CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}")
+
+project(sortdemo)
+
+#In these subdirectories add_library methods are created
+#Do not need to add "include" directory because include is linked in 
+#src/sort/CMakeLists.txt target_include_directories(my_sort_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/sort)
+add_subdirectory(src)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
+
+#Copy indifividual files:
+#install(FILES include/sort/sort.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include/sort)
+#install(FILES include/print/print.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include/print)
+
+#Better way to copy directory instead of individual files:
+install(DIRECTORY include/sort TYPE INCLUDE)
+install(DIRECTORY include/print TYPE INCLUDE)
+```
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+```
+cmake -G "Visual Studio 17 2022" -A x64 .. && cmake --build . && cmake --install .
 ```
 
 </details>
