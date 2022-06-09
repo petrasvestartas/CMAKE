@@ -430,7 +430,7 @@ Install location:
 * you must run x64 installer `"cmake -G "Visual Studio 17 2022" -A x64 .. "` instead of `"cmake .."`
 * you can change this directiory in bash -> `cmake -DCMAKE_INSTALL_PREFIX=" " ..` (But leave it to default)
 * More info: <https://stackoverflow.com/questions/72552568/cmake-include-src-and-install-directories-on-different-os/72555951#72555951>
-* Be sure you are running teminal or vscode with Administrator rights, else install will be forbidden
+* Be sure you are running teminal or vscode with `Administrator rights`, else install will be forbidden
 
 Install function:
 
