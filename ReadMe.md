@@ -425,7 +425,7 @@ ___
 
 Install location:
 
-* Windows C:\Program Files\<ProjectName> | Linux /usr/local
+* Windows `C:\Program Files\<ProjectName>` | Linux `/usr/local/`
 * check this message ` ("CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}") -> C:/Program Files (x86)/sortdemo `
 * if this is the case, you must run x64 installer `"cmake -G "Visual Studio 17 2022" -A x64 .. "` instead of `"cmake .."`
 * you can change this directiory in bash -> `cmake -DCMAKE_INSTALL_PREFIX=" " ..` (But leave it to default)
