@@ -417,7 +417,7 @@ Debug\sortdemo
 ___
 
 <details>
-  <summary>project_structure_source_and_include_folders</summary>
+  <summary>install_export</summary>
 
 <a name="install_export"></a>
 
