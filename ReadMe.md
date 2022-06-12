@@ -9,6 +9,7 @@ Examples:
 * [project_structure](#project_structure)
 * [project_structure_source_and_include_folders](#project_structure_source_and_include_folders)
 * [install_export](#install_export)
+* [find_package](#find_package)
 
 Syntax:
 
@@ -449,37 +450,102 @@ C:\Program File\
             sort.hpp
 ```
 
-#### Part 1/2 CMakeLists.txt file
+#### Part 1/4 CMakeLists.txt file
 
 main CMakeLists.txt
 
 ```cmake
 cmake_minimum_required(VERSION 3.0)
 
-#cmake -G "Visual Studio 17 2022" -A x64 .. && cmake --build . && cmake --install .
-message("CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}")
-
 project(sortdemo)
+
+#THIS MUST BE DIRECTLY AFTER PROJECT NAME E.G. project(sortdemo)
+#bash: cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release && cmake  --install . 
+#bash: before release add this if needed --target ALL_BUILD
+if (MSVC)
+ message("Petras is talking to you: MSVC Compiler, this line is not needed if MinGW compiler is used")
+ #Without this message no .dll file is created, place ir after the project name
+ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
+ #This one copies .dlls to project build directory
+ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+ message(CMAKE_RUNTIME_OUTPUT_DIRECTORY)
+
+endif (MSVC)
+
 
 #In these subdirectories add_library methods are created
 #Do not need to add "include" directory because include is linked in 
 #src/sort/CMakeLists.txt target_include_directories(my_sort_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/sort)
 add_subdirectory(src)
 
-add_executable(${PROJECT_NAME} main.cpp)
 
+#add executable that links the libraries
+add_executable(${PROJECT_NAME}  main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE my_sort_lib my_print_lib)
 
-#Copy indifividual files:
+
+message("CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}")
+
+####################################################################################################################
+#INSTALL
+####################################################################################################################
+#Copy individual files:
 #install(FILES include/sort/sort.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include/sort)
 #install(FILES include/print/print.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include/print)
-
+#install individual files
 #Better way to copy directory instead of individual files:
 install(DIRECTORY include/sort TYPE INCLUDE)
 install(DIRECTORY include/print TYPE INCLUDE)
+
+#Files will be copied here:
+message("PETRAS_CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}")
+
+#install targets / libraries
+#to use find_package(sortdemo) you need to add EXPORT
+install(
+    TARGETS my_sort_lib my_print_lib
+    EXPORT export_sort_demo
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/#${CMAKE_PROJECT_NAME}
+)
+
+#to generate export_sort_demo file, you have to call install again
+#Destiniation should be indetical
+#FILE keyword renames the file to specified one
+install(
+    EXPORT export_sort_demo
+    FILE ${CMAKE_PROJECT_NAME}-config.cmake
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/#${CMAKE_PROJECT_NAME}
+)
 ```
 
-#### Part 2/2 Run Bash Commands
+#### Part 2/4 nested src/CMakeLists.txt
+
+```cmake
+add_subdirectory(sort)
+add_subdirectory(print)
+```
+
+#### Part 3/4 nested one more time src/sort/CMakeLists.txt
+
+```cmake
+project(sort)
+message("sort library")
+add_library(my_sort_lib sort.cpp)
+
+#target_include_directories(my_sort_lib PUBLIC ${CMAKE_SOURCE_DIR}/include/sort)
+#$<..> Generator expresions:
+#these are two different paths for building and installation
+target_include_directories(my_sort_lib 
+PUBLIC 
+$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include/sort>
+$<INSTALL_INTERFACE:/include/sort>
+)
+
+message("CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
+```
+
+#### Part 4/4 Run Bash Commands
 
 bash by default this example build Debug mode therefore libraries must be installed with Release mode
 
@@ -487,14 +553,37 @@ bash by default this example build Debug mode therefore libraries must be instal
 "-B" - specifies path to the build folder
 "-H" - specifies path to the source folder
 
-```
-cmake  -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release   && cmake --install .
+```cmake
+cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release && cmake  --install . 
 ```
 
-or
+</details>
+
+___
+
+<details>
+  <summary>find_package</summary>
+
+<a name="find_package"></a>
+
+### :six: :recycle: find_package
+
+#### Part 1/2 CMakeLists.txt file
+
+main CMakeLists.txt
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+project(sortdemo)
 
 ```
-cmake  -G "Visual Studio 17 2022" -A x64 ..  && cmake --build . --target ALL_BUILD --config Release && cmake --install .
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+```
+
 ```
 
 </details>
