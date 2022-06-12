@@ -1,2 +1,0 @@
-C:/Program Files/sortdemo/include/sort/sort.hpp
-C:/Program Files/sortdemo/include/print/print.hpp

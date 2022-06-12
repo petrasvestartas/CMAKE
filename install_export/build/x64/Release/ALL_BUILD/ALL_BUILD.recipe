@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\src\print\Release\my_print_lib.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\src\sort\Release\my_sort_lib.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\Release\sortdemo.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

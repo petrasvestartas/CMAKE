@@ -481,10 +481,20 @@ install(DIRECTORY include/print TYPE INCLUDE)
 
 #### Part 2/2 Run Bash Commands
 
-bash
+bash by default this example build Debug mode therefore libraries must be installed with Release mode
+
+"-G" - specifies the generator name
+"-B" - specifies path to the build folder
+"-H" - specifies path to the source folder
 
 ```
-cmake -G "Visual Studio 17 2022" -A x64 .. && cmake --build . && cmake --install .
+cmake  -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release   && cmake --install .
+```
+
+or
+
+```
+cmake  -G "Visual Studio 17 2022" -A x64 ..  && cmake --build . --target ALL_BUILD --config Release && cmake --install .
 ```
 
 </details>
