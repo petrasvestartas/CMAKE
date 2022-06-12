@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\src\print\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">my_print_lib.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">my_print_lib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\src\print\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">my_print_lib.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">my_print_lib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\src\print\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">my_print_lib.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">my_print_lib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\src\print\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\install_export\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">my_print_lib.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">my_print_lib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
@@ -138,7 +138,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/Debug/my_print_lib.lib</ImportLibrary>
       <ModuleDefinitionFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/my_print_lib.dir/Debug/exports.def</ModuleDefinitionFile>
-      <ProgramDataBaseFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/Debug/my_print_lib.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/Debug/my_print_lib.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -199,7 +199,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/Release/my_print_lib.lib</ImportLibrary>
       <ModuleDefinitionFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/my_print_lib.dir/Release/exports.def</ModuleDefinitionFile>
-      <ProgramDataBaseFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/Release/my_print_lib.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/Release/my_print_lib.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -260,7 +260,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/MinSizeRel/my_print_lib.lib</ImportLibrary>
       <ModuleDefinitionFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/my_print_lib.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
-      <ProgramDataBaseFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/MinSizeRel/my_print_lib.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/MinSizeRel/my_print_lib.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -320,7 +320,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/RelWithDebInfo/my_print_lib.lib</ImportLibrary>
       <ModuleDefinitionFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/my_print_lib.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
-      <ProgramDataBaseFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/RelWithDebInfo/my_print_lib.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/RelWithDebInfo/my_print_lib.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
