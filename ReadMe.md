@@ -676,11 +676,11 @@ add_executable(test_0 main.cpp)
 target_link_libraries(test_0 PRIVATE math_lib gtest_main gmock_main)
 
 #this is a ctest
-add_executable(test_1 main_2.cpp)
-target_link_libraries(test_1 PRIVATE math_lib gtest_main gmock_main)
+#add_executable(test_1 main_2.cpp)
+#target_link_libraries(test_1 PRIVATE math_lib gtest_main gmock_main)
 
 #enable_testing()
-add_test(test_1 test_1)
+#add_test(test_1 test_1)
 #add_test(NAME unit_test_1 COMMAND test_1)
 
 ```
