@@ -604,7 +604,7 @@ cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  -
 ___
 
 <details>
-  <summary>find_package</summary>
+  <summary>fetch_content</summary>
 
 <a name="fetch_content"></a>
 
