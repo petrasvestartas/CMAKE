@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget my_sort_lib my_print_lib)
+foreach(_expectedTarget sortdemo::my_sort_lib sortdemo::my_print_lib)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -44,17 +44,17 @@ unset(_expectedTargets)
 # The installation prefix configured by this project.
 set(_IMPORT_PREFIX "C:/Program Files/sortdemo")
 
-# Create imported target my_sort_lib
-add_library(my_sort_lib SHARED IMPORTED)
+# Create imported target sortdemo::my_sort_lib
+add_library(sortdemo::my_sort_lib SHARED IMPORTED)
 
-set_target_properties(my_sort_lib PROPERTIES
+set_target_properties(sortdemo::my_sort_lib PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/sort"
 )
 
-# Create imported target my_print_lib
-add_library(my_print_lib SHARED IMPORTED)
+# Create imported target sortdemo::my_print_lib
+add_library(sortdemo::my_print_lib SHARED IMPORTED)
 
-set_target_properties(my_print_lib PROPERTIES
+set_target_properties(sortdemo::my_print_lib PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/print"
 )
 

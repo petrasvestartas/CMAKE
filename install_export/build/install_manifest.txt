@@ -4,5 +4,6 @@ C:/Program Files/sortdemo/lib/my_sort_lib.lib
 C:/Program Files/sortdemo/bin/my_sort_lib.dll
 C:/Program Files/sortdemo/lib/my_print_lib.lib
 C:/Program Files/sortdemo/bin/my_print_lib.dll
+C:/Program Files/sortdemo/bin/sortdemo.exe
 C:/Program Files/sortdemo/sortdemo-config.cmake
 C:/Program Files/sortdemo/sortdemo-config-release.cmake
