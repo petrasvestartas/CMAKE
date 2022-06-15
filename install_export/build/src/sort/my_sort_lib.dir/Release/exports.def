@@ -1,6 +1,0 @@
-EXPORTS 
-	??$_Copy_backward_memmove@PEANPEAN@std@@YAPEANPEAN00@Z
-	??$_Guess_median_unchecked@PEANU?$less@X@std@@@std@@YAXPEAN00U?$less@X@0@@Z
-	??$_Partition_by_median_guess_unchecked@PEANU?$less@X@std@@@std@@YA?AU?$pair@PEANPEAN@0@PEAN0U?$less@X@0@@Z
-	??$_Sort_unchecked@PEANU?$less@X@std@@@std@@YAXPEAN0_JU?$less@X@0@@Z
-	?mySort@@YAXAEAV?$vector@NV?$allocator@N@std@@@std@@@Z
