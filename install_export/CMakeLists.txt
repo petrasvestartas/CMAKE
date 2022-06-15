@@ -49,10 +49,10 @@ message("PETRAS_CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}")
 install(
     TARGETS my_sort_lib my_print_lib
     EXPORT export_sort_demo
-    RUNTIME DESTINATION "bin"
-  LIBRARY DESTINATION "lib"
-  ARCHIVE DESTINATION "lib"
     DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/#${CMAKE_PROJECT_NAME}
+    RUNTIME DESTINATION "bin"
+    LIBRARY DESTINATION "lib"
+    ARCHIVE DESTINATION "lib"
 )
 
 #to generate export_sort_demo file, you have to call install again

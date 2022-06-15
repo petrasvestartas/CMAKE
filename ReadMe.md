@@ -554,7 +554,7 @@ bash by default this example build Debug mode therefore libraries must be instal
 "-H" - specifies path to the source folder
 
 ```cmake
-cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release && cmake  --install . 
+cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release && cmake  
 ```
 
 </details>
@@ -583,7 +583,10 @@ project(sortdemo)
 bash
 
 ```
-
+cd ../../ && cd install_export/build   
+cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release && cmake  --install . 
+cd ../../ && cd find_package/build   
+cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release 
 ```
 
 </details>

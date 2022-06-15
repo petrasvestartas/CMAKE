@@ -1,0 +1,10 @@
+^C:\IBOIS57\_CODE\SOFTWARE\CPP\CMAKE\FIND_PACKAGE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/find_package -BC:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
