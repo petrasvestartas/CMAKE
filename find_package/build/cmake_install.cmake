@@ -32,6 +32,70 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/Debug/example.exe")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/Release/example.exe")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/MinSizeRel/example.exe")
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/RelWithDebInfo/example.exe")
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(GET_RUNTIME_DEPENDENCIES
+      RESOLVED_DEPENDENCIES_VAR _CMAKE_DEPS
+      EXECUTABLES
+        "C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/Debug/example.exe"
+      )
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(GET_RUNTIME_DEPENDENCIES
+      RESOLVED_DEPENDENCIES_VAR _CMAKE_DEPS
+      EXECUTABLES
+        "C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/Release/example.exe"
+      )
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    file(GET_RUNTIME_DEPENDENCIES
+      RESOLVED_DEPENDENCIES_VAR _CMAKE_DEPS
+      EXECUTABLES
+        "C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/MinSizeRel/example.exe"
+      )
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    file(GET_RUNTIME_DEPENDENCIES
+      RESOLVED_DEPENDENCIES_VAR _CMAKE_DEPS
+      EXECUTABLES
+        "C:/IBOIS57/_Code/Software/CPP/CMAKE/find_package/build/RelWithDebInfo/example.exe"
+      )
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    foreach(_CMAKE_TMP_dep IN LISTS _CMAKE_DEPS)
+      file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES ${_CMAKE_TMP_dep}
+        FOLLOW_SYMLINK_CHAIN)
+    endforeach()
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    foreach(_CMAKE_TMP_dep IN LISTS _CMAKE_DEPS)
+      file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES ${_CMAKE_TMP_dep}
+        FOLLOW_SYMLINK_CHAIN)
+    endforeach()
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+    foreach(_CMAKE_TMP_dep IN LISTS _CMAKE_DEPS)
+      file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES ${_CMAKE_TMP_dep}
+        FOLLOW_SYMLINK_CHAIN)
+    endforeach()
+  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+    foreach(_CMAKE_TMP_dep IN LISTS _CMAKE_DEPS)
+      file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES ${_CMAKE_TMP_dep}
+        FOLLOW_SYMLINK_CHAIN)
+    endforeach()
+  endif()
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

@@ -32,6 +32,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/cmake_install.cmake")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/include/sort")
 endif()
@@ -262,12 +267,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
     file(INSTALL DESTINATION "C:/Program Files/sortdemo" TYPE FILE FILES "C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/CMakeFiles/Export/C_/Program_Files/sortdemo/sortdemo-config-release.cmake")
   endif()
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/cmake_install.cmake")
-
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

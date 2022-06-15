@@ -33,9 +33,12 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
+  # Include the install script for the subdirectory.
   include("C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/sort/cmake_install.cmake")
-  include("C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/cmake_install.cmake")
+endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/IBOIS57/_Code/Software/CPP/CMAKE/install_export/build/src/print/cmake_install.cmake")
 endif()
 

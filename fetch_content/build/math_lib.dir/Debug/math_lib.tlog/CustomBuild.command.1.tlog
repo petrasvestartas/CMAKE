@@ -1,0 +1,10 @@
+^C:\IBOIS57\_CODE\SOFTWARE\CPP\CMAKE\FETCH_CONTENT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/fetch_content -BC:/IBOIS57/_Code/Software/CPP/CMAKE/fetch_content/build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/fetch_content/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

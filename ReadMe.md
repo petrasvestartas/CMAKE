@@ -10,6 +10,7 @@ Examples:
 * [project_structure_source_and_include_folders](#project_structure_source_and_include_folders)
 * [install_export](#install_export)
 * [find_package](#find_package)
+* [fetch_content](#fetch_content)
 
 Syntax:
 
@@ -573,8 +574,17 @@ ___
 main CMakeLists.txt
 
 ```cmake
-cmake_minimum_required(VERSION 3.0)
-project(sortdemo)
+cmake_minimum_required(VERSION 3.21)
+project(use_sort)
+#Incase CMake path is not found:
+#set(CMAKE_PREFIX_PATH "${CMAKE_PREFICES_PATH};C:\Program Files\sortdemo") #confi mode
+#set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};C:\Program Files\sortdemo") #confi mode
+
+
+#sortdemo must be installed in C:\Program Files\sortdemo\here must be cmake files
+find_package(sortdemo REQUIRED)
+add_executable(example main.cpp)
+target_link_libraries(example PRIVATE sortdemo::my_sort_lib sortdemo::my_print_lib)
 
 ```
 
@@ -587,6 +597,102 @@ cd ../../ && cd install_export/build
 cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release && cmake  --install . 
 cd ../../ && cd find_package/build   
 cmake  -DBUILD_SHARED_LIBS=ON -G "Visual Studio 17 2022" -A x64  ..  && cmake  --build . --config Release 
+```
+
+</details>
+
+___
+
+<details>
+  <summary>find_package</summary>
+
+<a name="fetch_content"></a>
+
+### :seven: :recycle: fetch_content
+
+Helps to install packages from github using the tag of release version and github link
+
+#### Part 1/2 CMakeLists.txt file
+
+main CMakeLists.txt
+
+```cmake
+################################################################################
+#Project name and defaults
+################################################################################
+cmake_minimum_required(VERSION 3.21)
+project(fetch_project_name)
+
+if (MSVC)
+ message("Petras is talking to you: MSVC Compiler, this line is not needed if MinGW compiler is used")
+ #Without this message no .dll file is created, place ir after the project name
+ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
+ #This one copies .dlls to project build directory
+ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+ message(CMAKE_RUNTIME_OUTPUT_DIRECTORY)
+
+endif (MSVC)
+
+set(CMAKE_VERBOSE_MAKEFILE ON)
+
+################################################################################
+#Create Library
+################################################################################
+add_library(math_lib math.cpp math.hpp)
+
+#find_library(ABC_PATH abc HINTS ${CMAKE_CURRENT_SOURCE_DIR})
+#find_path(GLIB_INLCUDE_PATHS glib.h HINTS /usr/include /usr/local/include PATH_SUFFIXES glib-2.0)
+#find_package(Threads REQUIRED)
+#target_link_libraries(name PRIVATE Threads::Threads)
+
+################################################################################
+#GoogleTest
+################################################################################
+include(FetchContent)
+FetchContent_Declare(
+    googletest
+    GIT_REPOSITORY https://github.com/google/googletest.git
+    GIT_TAG  release-1.11.0
+)
+
+# Check if population has already been performed
+FetchContent_GetProperties(googletest)
+if(NOT googletest_POPULATED)
+    message(STATUS "Failed to fetch googletest")
+    # Fetch the content using previously declared details
+    FetchContent_Populate(googletest)
+    # Bring the populated content into the build
+    add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
+else()
+    message(STATUS "googletest already populated")
+endif()
+
+################################################################################
+#Create executables and link libraries
+################################################################################
+#this is a google test run from bash Debug\test_0
+add_executable(test_0 main.cpp)
+target_link_libraries(test_0 PRIVATE math_lib gtest_main gmock_main)
+
+#this is a ctest
+add_executable(test_1 main_2.cpp)
+target_link_libraries(test_1 PRIVATE math_lib gtest_main gmock_main)
+
+#enable_testing()
+add_test(test_1 test_1)
+#add_test(NAME unit_test_1 COMMAND test_1)
+
+```
+
+#### Part 2/2 Run Bash Commands
+
+bash
+
+```
+cmake .. && cmake --build .
+Debug\test_0
+#ctest did not work
 ```
 
 </details>
