@@ -58,5 +58,5 @@ install(
 install(
     EXPORT export_sort_demo
     FILE ${CMAKE_PROJECT_NAME}-config.cmake
-    DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/#${CMAKE_PROJECT_NAME}
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/#${CMAKE_PROJECT_NAME}
 )

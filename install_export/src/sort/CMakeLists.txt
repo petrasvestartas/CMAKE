@@ -8,7 +8,7 @@ add_library(my_sort_lib sort.cpp)
 target_include_directories(my_sort_lib 
 PUBLIC 
 $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include/sort>
-$<INSTALL_INTERFACE:/include/sort>
+$<INSTALL_INTERFACE:include/sort>
 )
 
 message("CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
