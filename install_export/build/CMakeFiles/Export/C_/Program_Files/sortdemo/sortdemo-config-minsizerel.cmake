@@ -9,21 +9,21 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set_property(TARGET my_sort_lib APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(my_sort_lib PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "C:/Program Files/sortdemo/lib/my_sort_lib.lib"
-  IMPORTED_LOCATION_MINSIZEREL "C:/Program Files/sortdemo/lib/my_sort_lib.dll"
+  IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/my_sort_lib.dll"
   )
 
 list(APPEND _IMPORT_CHECK_TARGETS my_sort_lib )
-list(APPEND _IMPORT_CHECK_FILES_FOR_my_sort_lib "C:/Program Files/sortdemo/lib/my_sort_lib.lib" "C:/Program Files/sortdemo/lib/my_sort_lib.dll" )
+list(APPEND _IMPORT_CHECK_FILES_FOR_my_sort_lib "C:/Program Files/sortdemo/lib/my_sort_lib.lib" "${_IMPORT_PREFIX}/bin/my_sort_lib.dll" )
 
 # Import target "my_print_lib" for configuration "MinSizeRel"
 set_property(TARGET my_print_lib APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(my_print_lib PROPERTIES
   IMPORTED_IMPLIB_MINSIZEREL "C:/Program Files/sortdemo/lib/my_print_lib.lib"
-  IMPORTED_LOCATION_MINSIZEREL "C:/Program Files/sortdemo/lib/my_print_lib.dll"
+  IMPORTED_LOCATION_MINSIZEREL "${_IMPORT_PREFIX}/bin/my_print_lib.dll"
   )
 
 list(APPEND _IMPORT_CHECK_TARGETS my_print_lib )
-list(APPEND _IMPORT_CHECK_FILES_FOR_my_print_lib "C:/Program Files/sortdemo/lib/my_print_lib.lib" "C:/Program Files/sortdemo/lib/my_print_lib.dll" )
+list(APPEND _IMPORT_CHECK_FILES_FOR_my_print_lib "C:/Program Files/sortdemo/lib/my_print_lib.lib" "${_IMPORT_PREFIX}/bin/my_print_lib.dll" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)
