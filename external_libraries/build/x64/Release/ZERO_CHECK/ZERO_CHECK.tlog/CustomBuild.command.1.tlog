@@ -1,0 +1,10 @@
+^C:\IBOIS57\_CODE\SOFTWARE\CPP\CMAKE\EXTERNAL_LIBRARIES\BUILD\CMAKEFILES\FDE08E661B73D2081A0325257C5B036E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries -BC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/my_project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

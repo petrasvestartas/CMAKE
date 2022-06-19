@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93C09401-93FF-33AF-A320-F5DCCF70B1B7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>eigen</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\include\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\include\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\include\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\include\eigen3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\715fe3d569b3ca6c4088ba50c9ad244b\eigen-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\715fe3d569b3ca6c4088ba50c9ad244b\eigen-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (download, verify and extract) for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/download-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/verify-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/extract-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\eigen-urlinfo.txt;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (download, verify and extract) for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/download-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/verify-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/extract-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\eigen-urlinfo.txt;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (download, verify and extract) for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/download-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/verify-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/extract-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\eigen-urlinfo.txt;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (download, verify and extract) for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/download-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/verify-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/extract-eigen.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\eigen-urlinfo.txt;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\715fe3d569b3ca6c4088ba50c9ad244b\eigen-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\715fe3d569b3ca6c4088ba50c9ad244b\eigen-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\715fe3d569b3ca6c4088ba50c9ad244b\eigen-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\tmp\eigen-cfgcmd.txt;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No configure step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\tmp\eigen-cfgcmd.txt;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No configure step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\tmp\eigen-cfgcmd.txt;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No configure step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\tmp\eigen-cfgcmd.txt;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\715fe3d569b3ca6c4088ba50c9ad244b\eigen-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No build step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No build step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No build step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\715fe3d569b3ca6c4088ba50c9ad244b\eigen-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen/Eigen C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/include/eigen3/Eigen &amp;&amp; "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen/unsupported C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/include/eigen3/unsupported
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen/Eigen C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/include/eigen3/Eigen &amp;&amp; "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen/unsupported C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/include/eigen3/unsupported
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen/Eigen C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/include/eigen3/Eigen &amp;&amp; "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen/unsupported C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/include/eigen3/unsupported
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen/Eigen C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/include/eigen3/Eigen &amp;&amp; "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen/unsupported C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/include/eigen3/unsupported
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\715fe3d569b3ca6c4088ba50c9ad244b\eigen-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\de26b2363807f7f20fe4cfe39a764ddd\eigen-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/$(Configuration)/eigen-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\$(Configuration)\eigen-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/$(Configuration)/eigen-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\$(Configuration)\eigen-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/$(Configuration)/eigen-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\$(Configuration)\eigen-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'eigen'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/$(Configuration)/eigen-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/eigen/src/eigen-stamp/$(Configuration)/eigen-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-install;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-mkdir;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-download;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-update;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-patch;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-configure;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-build;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\src\eigen-stamp\$(Configuration)\eigen-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\$(Configuration)\eigen-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\fde08e661b73d2081a0325257c5b036e\eigen.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\$(Configuration)\eigen-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\eigen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\$(Configuration)\eigen-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\eigen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\$(Configuration)\eigen-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\eigen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\$(Configuration)\eigen-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\eigen</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries -BC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeCCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeCXXCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeRCCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeSystem.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\tmp\eigen-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\RepositoryInfo.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries -BC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeCCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeCXXCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeRCCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeSystem.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\tmp\eigen-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\RepositoryInfo.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries -BC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeCCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeCXXCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeRCCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeSystem.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\tmp\eigen-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\RepositoryInfo.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries -BC:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/external_libraries/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeCCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeCXXCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeRCCompiler.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\3.21.0\CMakeSystem.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\eigen\tmp\eigen-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\RepositoryInfo.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\CMakeFiles\eigen">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\external_libraries\build\ZERO_CHECK.vcxproj">
+      <Project>{B0E38862-9A59-31A6-B73E-ABF5E4804FA7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
