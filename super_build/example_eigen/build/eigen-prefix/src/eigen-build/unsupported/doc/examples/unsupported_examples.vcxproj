@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50219E80-68B4-3D34-AE43-B1AF9299F642}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>unsupported_examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\..\..\..\unsupported;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\..\..\..\unsupported;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\..\..\..\unsupported;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\..\..\..\unsupported;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\unsupported\doc\examples\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\ZERO_CHECK.vcxproj">
+      <Project>{9DC247E6-6E0F-3BE8-A236-275B4E151736}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_BVH_Example.vcxproj">
+      <Project>{87B5ED63-696B-321B-B968-2841FF59455B}</Project>
+      <Name>example_BVH_Example</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_EulerAngles.vcxproj">
+      <Project>{68BD906F-0092-3D98-9F22-6670763EE138}</Project>
+      <Name>example_EulerAngles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_FFT.vcxproj">
+      <Project>{7436818D-0300-339A-A8A3-65AB54064081}</Project>
+      <Name>example_FFT</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_MatrixExponential.vcxproj">
+      <Project>{167238F9-E071-311A-98D0-11B49D253624}</Project>
+      <Name>example_MatrixExponential</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_MatrixFunction.vcxproj">
+      <Project>{16AF3778-ABD2-3BF8-82D7-A50A759ECD90}</Project>
+      <Name>example_MatrixFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_MatrixLogarithm.vcxproj">
+      <Project>{AEDFEB07-FB57-319A-B0F9-52C45B18958C}</Project>
+      <Name>example_MatrixLogarithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_MatrixPower.vcxproj">
+      <Project>{A0B077AB-5715-3A9D-979C-90B5D9292DCD}</Project>
+      <Name>example_MatrixPower</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_MatrixPower_optimal.vcxproj">
+      <Project>{A292D70C-A029-3610-BD8B-954D2BB1F8A0}</Project>
+      <Name>example_MatrixPower_optimal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_MatrixSine.vcxproj">
+      <Project>{62F471C4-8A99-3AA9-9E9B-4450628D6A88}</Project>
+      <Name>example_MatrixSine</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_MatrixSinh.vcxproj">
+      <Project>{B7A82F7D-05E3-3DD3-BEEB-B2495AFD64C4}</Project>
+      <Name>example_MatrixSinh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_MatrixSquareRoot.vcxproj">
+      <Project>{BBB2CD40-FB98-3451-81CD-E01027CC62BE}</Project>
+      <Name>example_MatrixSquareRoot</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_PolynomialSolver1.vcxproj">
+      <Project>{A2CE886D-561D-3E90-B810-6697ED039701}</Project>
+      <Name>example_PolynomialSolver1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\unsupported\doc\examples\example_PolynomialUtils1.vcxproj">
+      <Project>{54D4A6A5-EEBE-3847-B08F-C97CCBD2E0B6}</Project>
+      <Name>example_PolynomialUtils1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

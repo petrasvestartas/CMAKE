@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5BE31565-ECBB-37BE-9050-1AA62D749257}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>product_small</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen;C:\IBOIS57\_Code\Software\CPP\Boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen;C:\IBOIS57\_Code\Software\CPP\Boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen;C:\IBOIS57\_Code\Software\CPP\Boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen;C:\IBOIS57\_Code\Software\CPP\Boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\test\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\EigenSmokeTestList.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindBLAS.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindCHOLMOD.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindHWLOC.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindKLU.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindLAPACK.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindPASTIX.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindSPQR.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindSuperLU.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindUMFPACK.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\MacroAddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\EigenSmokeTestList.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindBLAS.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindCHOLMOD.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindHWLOC.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindKLU.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindLAPACK.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindPASTIX.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindSPQR.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindSuperLU.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindUMFPACK.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\MacroAddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\EigenSmokeTestList.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindBLAS.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindCHOLMOD.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindHWLOC.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindKLU.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindLAPACK.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindPASTIX.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindSPQR.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindSuperLU.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindUMFPACK.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\MacroAddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/install/eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build --check-stamp-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/eigen-prefix/src/eigen-build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\EigenSmokeTestList.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindBLAS.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindCHOLMOD.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindHWLOC.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindKLU.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindLAPACK.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindPASTIX.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindSPQR.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindSuperLU.cmake;C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\install\eigen\cmake\FindUMFPACK.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\MacroAddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\ZERO_CHECK.vcxproj">
+      <Project>{9DC247E6-6E0F-3BE8-A236-275B4E151736}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_1.vcxproj">
+      <Project>{347278FA-0769-3F0C-9CD4-850B084C8B0F}</Project>
+      <Name>product_small_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_11.vcxproj">
+      <Project>{94FD02B5-8FAB-3131-BAF8-970286DFA454}</Project>
+      <Name>product_small_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_12.vcxproj">
+      <Project>{85AE4812-38EA-3BC5-9843-F43C2BA22E27}</Project>
+      <Name>product_small_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_13.vcxproj">
+      <Project>{06E4F24D-315C-3ED4-AA4E-AF975A6D88A4}</Project>
+      <Name>product_small_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_2.vcxproj">
+      <Project>{1F4DDE9D-D054-344E-A04C-0FD3A4A03E10}</Project>
+      <Name>product_small_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_21.vcxproj">
+      <Project>{449C49F8-AAE0-3085-B8BE-F79DAB4DCF89}</Project>
+      <Name>product_small_21</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_22.vcxproj">
+      <Project>{208B50F5-59C0-354D-81C7-3EDD9BAA0089}</Project>
+      <Name>product_small_22</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_23.vcxproj">
+      <Project>{B2FE4C57-77D0-35E0-9808-57E62609772C}</Project>
+      <Name>product_small_23</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_3.vcxproj">
+      <Project>{EC4E8E9D-7CB7-3D4E-A306-FB7916DA5112}</Project>
+      <Name>product_small_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_31.vcxproj">
+      <Project>{A70077F8-4579-31BA-AE23-AA49580F0FD9}</Project>
+      <Name>product_small_31</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_32.vcxproj">
+      <Project>{7945DF6E-EE40-32F6-8EBB-756693AFF3D9}</Project>
+      <Name>product_small_32</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_33.vcxproj">
+      <Project>{48AA6D74-2623-3CBE-8EEC-87E7317BC688}</Project>
+      <Name>product_small_33</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_4.vcxproj">
+      <Project>{D74EC449-665A-3FCE-91A2-2FAF62CB51A9}</Project>
+      <Name>product_small_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_41.vcxproj">
+      <Project>{D6BCC0F0-FE27-3898-A764-5100FB7A021F}</Project>
+      <Name>product_small_41</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_42.vcxproj">
+      <Project>{193AF1F1-A1B9-3756-8F08-D69B32020BD7}</Project>
+      <Name>product_small_42</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_43.vcxproj">
+      <Project>{D6AA33B4-7E5C-3199-9465-7301BAA434D8}</Project>
+      <Name>product_small_43</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_5.vcxproj">
+      <Project>{9E6678EB-B676-369E-84D3-4FF81D126D2E}</Project>
+      <Name>product_small_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_6.vcxproj">
+      <Project>{2F15D4A3-43FD-3778-B12C-CE3906F5DAC5}</Project>
+      <Name>product_small_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_7.vcxproj">
+      <Project>{381FA1BB-397A-3FC8-BBAC-B7627CF51FF7}</Project>
+      <Name>product_small_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_8.vcxproj">
+      <Project>{DC62F381-598B-3E94-A977-893D50CA57D7}</Project>
+      <Name>product_small_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\IBOIS57\_Code\Software\CPP\CMAKE\super_build\example_eigen\build\eigen-prefix\src\eigen-build\test\product_small_9.vcxproj">
+      <Project>{1B7230ED-5451-3EA0-9529-B51BBBDEA3FF}</Project>
+      <Name>product_small_9</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

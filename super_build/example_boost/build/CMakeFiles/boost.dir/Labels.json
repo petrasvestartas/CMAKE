@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/boost"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/e112057a8bc471cb84284272ae3e2e9a/boost.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/f6083fbb51d87da2b0d515b9a920cfee/boost-complete.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/97d2de227f246506ed666396a1ddac5a/boost-build.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/97d2de227f246506ed666396a1ddac5a/boost-configure.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/97d2de227f246506ed666396a1ddac5a/boost-download.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/97d2de227f246506ed666396a1ddac5a/boost-install.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/97d2de227f246506ed666396a1ddac5a/boost-mkdir.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/97d2de227f246506ed666396a1ddac5a/boost-patch.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_boost/build/CMakeFiles/97d2de227f246506ed666396a1ddac5a/boost-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"boost"
+		],
+		"name" : "boost"
+	}
+}

@@ -66,5 +66,6 @@ SET(BUILD_MY_PROJECTS "" CACHE STRING "Build Project")
 if (BUILD_MY_PROJECTS)
   message(AUTHOR_WARNING "BUILD_MY_PROJECTS_" ${BUILD_MY_PROJECTS})
   add_executable(my_exe main.cpp)
-  include_directories("${CMAKE_BINARY_DIR}/install/eigen/") #add directory of the EIGEN header-only library 
+  #include_directories("${CMAKE_BINARY_DIR}/install/eigen/") #add directory of the EIGEN header-only library 
+  target_include_directories(my_exe PRIVATE "${CMAKE_BINARY_DIR}/install/eigen/") #add directory of the EIGEN header-only library 
 endif ()

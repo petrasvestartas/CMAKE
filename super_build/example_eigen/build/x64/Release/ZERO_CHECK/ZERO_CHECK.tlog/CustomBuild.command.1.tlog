@@ -1,0 +1,10 @@
+^C:\IBOIS57\_CODE\SOFTWARE\CPP\CMAKE\SUPER_BUILD\EXAMPLE_EIGEN\BUILD\CMAKEFILES\A8553D82E2C210FF1CAEDF6673152F5E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen -BC:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/superbuild.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

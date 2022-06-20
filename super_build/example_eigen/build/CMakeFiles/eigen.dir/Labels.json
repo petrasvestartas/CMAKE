@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/eigen"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/a8553d82e2c210ff1caedf6673152f5e/eigen.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/6fc3bc316fb94e806f2eeace540cab07/eigen-complete.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/186503410a13d551e757e540a20e1b1b/eigen-build.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/186503410a13d551e757e540a20e1b1b/eigen-configure.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/186503410a13d551e757e540a20e1b1b/eigen-download.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/186503410a13d551e757e540a20e1b1b/eigen-install.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/186503410a13d551e757e540a20e1b1b/eigen-mkdir.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/186503410a13d551e757e540a20e1b1b/eigen-patch.rule"
+		},
+		{
+			"file" : "C:/IBOIS57/_Code/Software/CPP/CMAKE/super_build/example_eigen/build/CMakeFiles/186503410a13d551e757e540a20e1b1b/eigen-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"eigen"
+		],
+		"name" : "eigen"
+	}
+}
