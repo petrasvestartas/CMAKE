@@ -171,9 +171,8 @@ endif ()
 #EXECUTABLES
 ###############################################################################
 SET(BUILD_MY_PROJECTS "" CACHE STRING "Build Project")
-
 if (BUILD_MY_PROJECTS)
-message(AUTHOR_WARNING "BUILD_MY_PROJECTS_" ${BUILD_MY_PROJECTS})
+  message(AUTHOR_WARNING "BUILD_MY_PROJECTS_" ${BUILD_MY_PROJECTS})
   add_executable(my_exe main.cpp)
 
 
